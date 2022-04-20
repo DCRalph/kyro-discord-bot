@@ -5,7 +5,7 @@ import command from '../command.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Command(
+  new command.Leagcy(
     client,
     ['sexy adam', 'sexy frog', 'sexy frog hat boy'],
     'sexy adam',

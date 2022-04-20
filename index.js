@@ -5,6 +5,7 @@ import command from './command.js'
 // import commands from './commands.js'
 import fs from 'fs'
 import db from './db.js'
+import log from './logger.js'
 
 const client = new Discord.Client({
   intents: [
@@ -19,26 +20,35 @@ const client = new Discord.Client({
 let enable = true
 
 client.on('ready', async () => {
-  console.log(`Logged in as ${client.user.tag}!`)
+  log.log(`Logged in as ${client.user.tag}!`)
 
   client.user.setPresence(util.defaultAct)
 
+  log.info('Loading commands...')
+
   let files = fs.readdirSync('./commands')
-  files.forEach(async (file) => {
-    if (file.endsWith('.js') && !file.includes('!')) {
-      const cmd = await import(`./commands/${file}`)
+  for (let file of files) {
+    if (file.endsWith('.js')) {
+      let cmd = await import(`./commands/${file}`)
       cmd.create(client)
     }
-  })
+  }
 
   db.read()
-  for (key in db.data.commandLog) {
+  for (const key in db.data.commandLog) {
     if (db.data.commandLog[key]) {
+      if (!command.all.find((c) => c.name == key)) {
+        log.log(
+          log.c.red('Command'),
+          log.c.blue(key),
+          log.c.red('in in the database but has no corresponding command.')
+        )
+      }
     }
   }
 })
 
-// console.log(command.commands)
+// log.log(command.commands)
 
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return
@@ -51,7 +61,7 @@ client.on('interactionCreate', (interaction) => {
     if (enable) command.runAllSlash(interaction, client)
   }
   if (interaction.isButton()) {
-    console.log(interaction)
+    log.log(interaction)
   }
 })
 

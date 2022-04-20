@@ -1,6 +1,7 @@
 import Discord from 'discord.js'
 import db from './db.js'
 import util from './util.js'
+import log from './logger.js'
 
 let all = []
 let commands = []
@@ -28,7 +29,8 @@ class Command {
     }
     db.write()
 
-    console.log(`Command ${this.name} loaded. [Leagcy]`)
+    // log.success(`Command ${this.name} loaded. ${log.c.magenta('[Leagcy]')}`)
+    log.log(log.c.green('Loaded Command'), log.c.red('[Leagcy]'), this.name)
   }
 
   async run(message, client) {
@@ -54,14 +56,15 @@ class Command {
             message.channel.send({
               embeds: [embed],
             })
-            console.log(error)
+            log.log(error)
           }
 
           db.read()
           db.data.commandLog[this.name]++
           db.write()
 
-          console.log(`Command ${this.name} used. [Leagcy]`)
+          // log.log(`Command ${this.name} used. ${log.c.magenta('[Leagcy]')}`)
+          log.log(log.c.green('Used Command'), log.c.red('[Leagcy]'), this.name)
 
           return
         }
@@ -101,7 +104,7 @@ class Slash {
     }
 
     client.guilds.cache.get('689384013047005199')?.commands.create(data)
-    // .then(console.log)
+    // .then(log.log)
 
     db.read()
     if (typeof db.data.commandLog[this.name] === 'undefined') {
@@ -109,7 +112,8 @@ class Slash {
     }
     db.write()
 
-    console.log(`Command ${this.name} loaded. [Slash]`)
+    // log.success(`Command ${this.name} loaded. ${log.c.red('[Slash]')}`)
+    log.log(log.c.green('Loaded Command'), log.c.red('[Slash]'), this.name)
   }
 
   async run(interaction, client) {
@@ -133,14 +137,15 @@ class Slash {
           interaction.reply({
             embeds: [embed],
           })
-          console.log(error)
+          log.log(error)
         }
 
         db.read()
         db.data.commandLog[this.name]++
         db.write()
 
-        console.log(`Command ${this.name} used. [Slash]`)
+        // log.log(`Command ${this.name} used. ${log.c.red('[Slash]')}`)
+        log.log(log.c.green('Used Command'), log.c.red('[Slash]'), this.name)
 
         return
       }
