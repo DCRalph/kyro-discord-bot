@@ -103,7 +103,16 @@ class Slash {
       options: options,
     }
 
-    client.guilds.cache.get('689384013047005199')?.commands.create(data)
+    // client.guilds.cache.get('689384013047005199')?.commands.create(data)
+    // client.guilds.cache.get('877375997870239785')?.commands.create(data)
+
+    // const guild = client.guilds.cache.get('877375997870239785')
+    // let commandManager = guild.commands
+
+    let commandManager = client.application?.commands
+
+    commandManager.create(data)
+
     // .then(log.log)
 
     db.read()
@@ -118,38 +127,39 @@ class Slash {
 
   async run(interaction, client) {
     const now = Date.now()
-    if (now - this.lastUsed > this.coolDown) {
-      if (interaction.commandName === this.aliases[0]) {
-        this.lastUsed = now
-        try {
-          await this.fn(interaction, client)
-        } catch (error) {
-          const embed = new Discord.MessageEmbed()
+    if (
+      now - this.lastUsed > this.coolDown &&
+      interaction.commandName === this.aliases[0]
+    ) {
+      this.lastUsed = now
+      try {
+        await this.fn(interaction, client)
+      } catch (error) {
+        const embed = new Discord.MessageEmbed()
 
-          embed.setTitle(`ERROR`)
-          embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
-          embed.addField(
-            'oopsie woopsie i made a fucky wucky a wittle fucko boingo! the code monkeys at our headquarters are working VEWY hard to fix this!',
-            '\u200b'
-          )
-          embed.addField('Error', '```' + error + '```')
+        embed.setTitle(`ERROR`)
+        embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
+        embed.addField(
+          'oopsie woopsie i made a fucky wucky a wittle fucko boingo! the code monkeys at our headquarters are working VEWY hard to fix this!',
+          '\u200b'
+        )
+        embed.addField('Error', '```' + error + '```')
 
-          interaction.reply({
-            embeds: [embed],
-          })
-          log.log(error)
-        }
-
-        db.read()
-        db.data.commandLog[this.name]++
-        db.write()
-
-        // log.log(`Command ${this.name} used. ${log.c.red('[Slash]')}`)
-        log.log(log.c.green('Used Command'), log.c.red('[Slash]'), this.name)
-
-        return
+        interaction.reply({
+          embeds: [embed],
+        })
+        log.log(error)
       }
+
+      db.read()
+      db.data.commandLog[this.name]++
+      db.write()
+
+      log.log(log.c.green('Used Command'), log.c.red('[Slash]'), this.name)
+
+      return true
     }
+    return false
   }
 }
 
@@ -160,9 +170,12 @@ const runAllText = (message, client) => {
 }
 
 const runAllSlash = (interaction, client) => {
+  let found = false
   slashs.forEach((c) => {
-    c.run(interaction, client)
+    let res = c.run(interaction, client)
+    if (res == true) found = true
   })
+  return found
 }
 
 const getCommand = (cmd) => {

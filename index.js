@@ -34,6 +34,8 @@ client.on('ready', async () => {
     }
   }
 
+  log.info('Loaded Done!')
+
   db.read()
   for (const key in db.data.commandLog) {
     if (db.data.commandLog[key]) {
@@ -46,6 +48,9 @@ client.on('ready', async () => {
       }
     }
   }
+
+  // let cmdss = await client.application?.commands.fetch()
+  // log.log(cmdss)
 })
 
 // log.log(command.commands)
@@ -58,7 +63,20 @@ client.on('messageCreate', async (message) => {
 
 client.on('interactionCreate', (interaction) => {
   if (interaction.isCommand()) {
-    if (enable) command.runAllSlash(interaction, client)
+    if (enable) {
+      let res = command.runAllSlash(interaction, client)
+      if (!res) {
+        let embed = new Discord.MessageEmbed()
+        embed.setTitle(
+          `Sorry, I don't know what that means. Try /help for a list of commands.`
+        )
+        embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
+
+        interaction.reply({
+          embeds: [embed],
+        })
+      }
+    }
   }
   if (interaction.isButton()) {
     log.log(interaction)
