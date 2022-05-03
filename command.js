@@ -103,17 +103,11 @@ class Slash {
       options: options,
     }
 
-    // client.guilds.cache.get('689384013047005199')?.commands.create(data)
-    // client.guilds.cache.get('877375997870239785')?.commands.create(data)
+    client.guilds.cache.get('689384013047005199')?.commands.create(data)
+    client.guilds.cache.get('877375997870239785')?.commands.create(data)
 
-    // const guild = client.guilds.cache.get('877375997870239785')
-    // let commandManager = guild.commands
-
-    let commandManager = client.application?.commands
-
-    commandManager.create(data)
-
-    // .then(log.log)
+    // let commandManager = client.application?.commands
+    // commandManager.create(data)
 
     db.read()
     if (typeof db.data.commandLog[this.name] === 'undefined') {
@@ -145,10 +139,25 @@ class Slash {
         )
         embed.addField('Error', '```' + error + '```')
 
-        interaction.reply({
-          embeds: [embed],
-        })
-        log.log(error)
+        try {
+          await interaction.reply({
+            embeds: [embed],
+          })
+        } catch (error) {
+          if (error.name == 'Error [INTERACTION_ALREADY_REPLIED]') {
+            try {
+              await interaction.channel.send({
+                embeds: [embed],
+              })
+            } catch (error) {
+              log.log(error)
+            }
+          } else {
+            log.log(error)
+          }
+        }
+
+        // log.log(error)
       }
 
       db.read()
@@ -172,8 +181,7 @@ const runAllText = (message, client) => {
 const runAllSlash = (interaction, client) => {
   let found = false
   slashs.forEach((c) => {
-    let res = c.run(interaction, client)
-    if (res == true) found = true
+    found = c.run(interaction, client) || found
   })
   return found
 }
