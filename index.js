@@ -22,6 +22,8 @@ let enable = true
 client.on('ready', async () => {
   log.log(`Logged in as ${client.user.tag}!`)
 
+  util.serverInfo(client, '689384013047005199')
+
   client.user.setPresence(util.defaultAct)
 
   log.info('Loading commands...')

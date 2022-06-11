@@ -4,26 +4,22 @@
     "name": "KyroGaming",
     "icon": "a_234264d941211c68998e5d9390a6410b",
     "features": [
+      "ANIMATED_ICON",
       "ROLE_ICONS",
       "INVITE_SPLASH",
-      "ANIMATED_ICON",
       "SEVEN_DAY_THREAD_ARCHIVE",
-      "THREE_DAY_THREAD_ARCHIVE",
       "MEMBER_PROFILES",
+      "PRIVATE_THREADS",
       "BANNER",
-      "PRIVATE_THREADS"
+      "THREE_DAY_THREAD_ARCHIVE"
     ],
-    "commands": [
-      "948362864362663946",
-      "948350180049158174",
-      "948488419389112351",
-      "948352392850710588"
-    ],
+    "commands": [],
     "members": [
       "884606241022836746",
       "148218102528737280",
       "624056254611980309",
       "719778832361455666",
+      "906779792320393216",
       "333422871567400961",
       "547546531666984961",
       "147783990302998528",
@@ -56,6 +52,7 @@
       "348286039841832961",
       "699460552128331828",
       "404781057838284811",
+      "946324236513968149",
       "306306119767293952",
       "512713019495677972",
       "487806809898483712",
@@ -73,13 +70,14 @@
       "270904126974590976",
       "507807751515275266",
       "159985870458322944",
+      "659968369151311872",
       "242730576195354624",
       "412494383368372227",
       "414518793314893826",
       "303335038748196876",
       "461811794541805569",
       "425181841486643206",
-      "526918477479673876"
+      "407831738883244032"
     ],
     "channels": [
       "689722828148441111",
@@ -99,16 +97,19 @@
       "689722880832962571",
       "814395475112886313",
       "699111407832006796",
+      "980361693576192021",
       "758566298446856202",
       "735746287529361440",
       "689723008645988361",
       "871147391980556310",
+      "980361901026463754",
       "814393085239754772",
       "689709970337562624",
       "878542163250642964",
       "689710360105844736",
       "689768390612484132",
       "757177349530976336",
+      "985089648399364167",
       "715689925344755773",
       "689753853859463194",
       "715496877390430280",
@@ -118,6 +119,7 @@
       "699726105443303485",
       "689768849222271115",
       "758566103408050226",
+      "980360716244623380",
       "727059423196872744",
       "689723053772374091",
       "948861359515394048",
@@ -134,8 +136,10 @@
       "689768506551566397",
       "689714225693720717",
       "689713103474393088",
+      "984955564910075904",
       "689708717314539597",
       "699726498059386880",
+      "950884900989468752",
       "727059279244296293",
       "689713394936578099",
       "847304163586605056",
@@ -143,7 +147,6 @@
       "941273666593882162",
       "689678852628283430",
       "689384013047005208",
-      "718255665910644757",
       "715496821211791390",
       "699111471321448448",
       "735746223906095138",
@@ -170,11 +173,13 @@
       "757176908373950525",
       "715496451169583105",
       "689714090540924928",
+      "973861968756768768",
       "699111301707726858",
       "689714183230717983",
       "718726992333111308",
       "766784398032764958",
       "691532608743669811",
+      "982901907381190676",
       "713893825046773842",
       "689768717932036107",
       "718726677584412713",
@@ -199,6 +204,7 @@
       "713894016365625415",
       "871147268521209876",
       "689769008744103988",
+      "980361786484211722",
       "698746840253988958",
       "689768660814135380",
       "814637037864615946",
@@ -213,13 +219,16 @@
       "699111139476242462",
       "690337046874947594",
       "718726961152786502",
+      "983507324989755443",
       "699726455394926654",
       "699726528480804935",
       "758566148139778058",
+      "983180670023131166",
       "948861549563498546",
       "689714730033610812",
       "689753953155547177",
       "755680239199322132",
+      "973524496914972732",
       "847304105863938159",
       "735746350402109461",
       "689713455552659472",
@@ -231,7 +240,6 @@
       "759882224736141313",
       "941797214072762428",
       "861781557496905749",
-      "689709940696416383",
       "814739602022596628",
       "937864792859881472",
       "727059394260631643",
@@ -241,12 +249,14 @@
       "941583995542593556",
       "699726328995512410",
       "689714318366867458",
+      "975546939342995507",
       "861781741919404042",
       "759882003310444545",
       "699033199099117598",
       "871146809437863976",
       "718726834665291827",
       "689384013047005203",
+      "973141549317758996",
       "689709884928950303",
       "861781786773553212",
       "759882178568912976",
@@ -257,6 +267,7 @@
     "bans": [],
     "roles": [
       "759881629543563316",
+      "971546144821878865",
       "689712234460741661",
       "689756540902572062",
       "948861091964936223",
@@ -303,10 +314,12 @@
       "727053288943386677",
       "698746745987006487",
       "814637918978965525",
+      "980360057726304286",
       "783145204000882708",
       "689712042365812762",
       "940682256022896672",
       "937459847077711914",
+      "979914863805620264",
       "708073139040682034",
       "927069514162638889",
       "689769539839197234",
@@ -326,7 +339,7 @@
     "vanityURLCode": null,
     "nsfwLevel": "DEFAULT",
     "discoverySplash": null,
-    "memberCount": 60,
+    "memberCount": 63,
     "large": true,
     "premiumProgressBarEnabled": true,
     "applicationId": null,
@@ -340,7 +353,7 @@
     "joinedTimestamp": 1630979887442,
     "defaultMessageNotifications": "ALL_MESSAGES",
     "systemChannelFlags": 0,
-    "maximumMembers": 250000,
+    "maximumMembers": 500000,
     "maximumPresences": null,
     "approximateMemberCount": null,
     "approximatePresenceCount": null,
@@ -383,7 +396,9 @@
       "867251639341678632",
       "902671065766047804",
       "902671318598713374",
-      "909644845021270026"
+      "909644845021270026",
+      "959219439604203520",
+      "960043292203040778"
     ],
     "stickers": [],
     "createdTimestamp": 1584432356846,
@@ -397,37 +412,100 @@
     {
       "member": {
         "guildId": "689384013047005199",
-        "joinedTimestamp": 1614460761369,
+        "joinedTimestamp": 1649503102026,
         "premiumSinceTimestamp": null,
         "nickname": null,
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
-        "userId": "526918477479673876",
+        "userId": "407831738883244032",
         "avatar": null,
-        "displayName": "PureTwist",
+        "displayName": "Imagine Wagon",
         "roles": [
+          "759881629543563316",
+          "871146564398231654",
+          "941582793790586890",
           "718561230218068047",
-          "699010011271135303",
+          "713893634206072832",
+          "727053288943386677",
+          "757176593507418113",
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526918477479673876/b2096546e54608f35bd949f9a586e1ad.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/407831738883244032/a24719b4da3b6e0fa7a590f29c2db47a.webp"
       },
       "user": {
-        "id": "526918477479673876",
+        "id": "407831738883244032",
         "bot": false,
         "system": false,
-        "flags": null,
-        "username": "PureTwist",
-        "discriminator": "9422",
-        "avatar": "b2096546e54608f35bd949f9a586e1ad",
-        "createdTimestamp": 1545697554703,
-        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/2.png",
-        "tag": "PureTwist#9422",
-        "avatarURL": "https://cdn.discordapp.com/avatars/526918477479673876/b2096546e54608f35bd949f9a586e1ad.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526918477479673876/b2096546e54608f35bd949f9a586e1ad.webp"
+        "flags": 128,
+        "username": "Imagine Wagon",
+        "discriminator": "2359",
+        "avatar": "a24719b4da3b6e0fa7a590f29c2db47a",
+        "createdTimestamp": 1517305063697,
+        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/4.png",
+        "tag": "Imagine Wagon#2359",
+        "avatarURL": "https://cdn.discordapp.com/avatars/407831738883244032/a24719b4da3b6e0fa7a590f29c2db47a.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/407831738883244032/a24719b4da3b6e0fa7a590f29c2db47a.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "407831738883244032",
+        "guild": "689384013047005199",
+        "status": "online",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654944933326
+          },
+          {
+            "id": "spotify:1",
+            "name": "Spotify",
+            "type": "LISTENING",
+            "url": null,
+            "details": "Not Ready Yet",
+            "state": "Eels",
+            "applicationId": null,
+            "syncId": "4ZDzwwmDQs1W5sfhg4A3pi",
+            "platform": null,
+            "flags": 48,
+            "emoji": null,
+            "sessionId": "9a3e1147c50665bf74b3be208898f635",
+            "buttons": [],
+            "createdTimestamp": 1654944930701
+          },
+          {
+            "id": "94d3cbb068a8961e",
+            "name": "VALORANT",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "700136079562375258",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654939294697
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -471,12 +549,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586660872241,
         "premiumSinceTimestamp": null,
-        "nickname": "SEN Deez",
+        "nickname": "boner garage",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "461811794541805569",
         "avatar": null,
-        "displayName": "SEN Deez",
+        "displayName": "boner garage",
         "roles": [
           "689712234460741661",
           "847303253653848084",
@@ -516,7 +594,24 @@
         "userId": "461811794541805569",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": []
+        "activities": [
+          {
+            "id": "spotify:1",
+            "name": "Spotify",
+            "type": "LISTENING",
+            "url": null,
+            "details": "Juicy - 2005 Remaster",
+            "state": "The Notorious B.I.G.",
+            "applicationId": null,
+            "syncId": "355RUwXtdecClzxv1zU98n",
+            "platform": null,
+            "flags": 48,
+            "emoji": null,
+            "sessionId": "d8c1bb2440f864fc39921f0329dbbd37",
+            "buttons": [],
+            "createdTimestamp": 1654944748069
+          }
+        ]
       }
     },
     {
@@ -554,8 +649,28 @@
       "presence": {
         "userId": "303335038748196876",
         "guild": "689384013047005199",
-        "status": "online",
-        "activities": []
+        "status": "idle",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": "Corporate Pandering Month!!",
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654893444366
+          }
+        ]
       }
     },
     {
@@ -563,15 +678,17 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586674469472,
         "premiumSinceTimestamp": null,
-        "nickname": "SEN cheeseygreasey",
+        "nickname": "Hayase Nagatoro",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "414518793314893826",
         "avatar": null,
-        "displayName": "SEN cheeseygreasey",
+        "displayName": "Hayase Nagatoro",
         "roles": [
           "759881629543563316",
+          "971546144821878865",
           "689712234460741661",
+          "948861091964936223",
           "847303253653848084",
           "689712155578335270",
           "783144373113192449",
@@ -587,13 +704,15 @@
           "727053288943386677",
           "698746745987006487",
           "814637918978965525",
+          "980360057726304286",
           "783145204000882708",
           "689712042365812762",
+          "979914863805620264",
           "757176593507418113",
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/6410ddc35d03a69979aa4305fbbb3fdf.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/821e57628e00ffc2b67f03d48df71d5a.webp"
       },
       "user": {
         "id": "414518793314893826",
@@ -602,18 +721,37 @@
         "flags": 256,
         "username": "cheeseygreasey",
         "discriminator": "1936",
-        "avatar": "6410ddc35d03a69979aa4305fbbb3fdf",
+        "avatar": "821e57628e00ffc2b67f03d48df71d5a",
         "createdTimestamp": 1518899381713,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "cheeseygreasey#1936",
-        "avatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/6410ddc35d03a69979aa4305fbbb3fdf.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/6410ddc35d03a69979aa4305fbbb3fdf.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/821e57628e00ffc2b67f03d48df71d5a.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/414518793314893826/821e57628e00ffc2b67f03d48df71d5a.webp"
       },
       "presence": {
         "userId": "414518793314893826",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": []
+        "activities": [
+          {
+            "id": "b7bc353ede575294",
+            "name": "World of Warcraft",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654941526931
+          }
+        ]
       }
     },
     {
@@ -621,12 +759,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586663466322,
         "premiumSinceTimestamp": null,
-        "nickname": "SFS Rakuyo",
+        "nickname": "Sad Overwatch 1 Player",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "412494383368372227",
         "avatar": null,
-        "displayName": "SFS Rakuyo",
+        "displayName": "Sad Overwatch 1 Player",
         "roles": [
           "759881629543563316",
           "689712234460741661",
@@ -639,12 +777,13 @@
           "699110834252546089",
           "930696869355597844",
           "727053288943386677",
+          "980360057726304286",
           "689712042365812762",
           "757176593507418113",
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/f5c06e9a8c4b29fc9b39ee3290b6e457.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/3f6b07a7128d6d3d8bbfdb6a4ca503ab.webp"
       },
       "user": {
         "id": "412494383368372227",
@@ -653,14 +792,38 @@
         "flags": null,
         "username": "Rakuyo",
         "discriminator": "3501",
-        "avatar": "f5c06e9a8c4b29fc9b39ee3290b6e457",
+        "avatar": "3f6b07a7128d6d3d8bbfdb6a4ca503ab",
         "createdTimestamp": 1518416724770,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Rakuyo#3501",
-        "avatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/f5c06e9a8c4b29fc9b39ee3290b6e457.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/f5c06e9a8c4b29fc9b39ee3290b6e457.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/3f6b07a7128d6d3d8bbfdb6a4ca503ab.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/412494383368372227/3f6b07a7128d6d3d8bbfdb6a4ca503ab.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "412494383368372227",
+        "guild": "689384013047005199",
+        "status": "online",
+        "activities": [
+          {
+            "id": "573a19d2bc139c94",
+            "name": "Dead by Daylight",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "357607133254254632",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654943994717
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -700,6 +863,86 @@
         "guild": "689384013047005199",
         "status": "online",
         "activities": []
+      }
+    },
+    {
+      "member": {
+        "guildId": "689384013047005199",
+        "joinedTimestamp": 1651797134649,
+        "premiumSinceTimestamp": null,
+        "nickname": null,
+        "pending": false,
+        "communicationDisabledUntilTimestamp": null,
+        "userId": "659968369151311872",
+        "avatar": null,
+        "displayName": "Misti",
+        "roles": [
+          "699010011271135303",
+          "689712042365812762",
+          "689384013047005199"
+        ],
+        "avatarURL": null,
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/659968369151311872/ec277882a6b07f7381db4a1e28438037.webp"
+      },
+      "user": {
+        "id": "659968369151311872",
+        "bot": false,
+        "system": false,
+        "flags": 64,
+        "username": "Misti",
+        "discriminator": "0001",
+        "avatar": "ec277882a6b07f7381db4a1e28438037",
+        "createdTimestamp": 1577419120825,
+        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
+        "tag": "Misti#0001",
+        "avatarURL": "https://cdn.discordapp.com/avatars/659968369151311872/ec277882a6b07f7381db4a1e28438037.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/659968369151311872/ec277882a6b07f7381db4a1e28438037.webp"
+      },
+      "presence": {
+        "userId": "659968369151311872",
+        "guild": "689384013047005199",
+        "status": "dnd",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": "going clinically insane, you should probably ignore what i say",
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654925623945
+          },
+          {
+            "id": "ccc4bf3636b37d3c",
+            "name": "Netflix",
+            "type": "PLAYING",
+            "url": null,
+            "details": "Lucifer",
+            "state": "S1:E12 #TeamLucifer",
+            "applicationId": "926541425682829352",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": "f63f80105e2796563416770e407e5a00",
+            "buttons": [
+              "Watch Episode",
+              "View Series"
+            ],
+            "createdTimestamp": 1654944937707
+          }
+        ]
       }
     },
     {
@@ -775,12 +1018,7 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/507807751515275266/228523ea851c54536f23667c8a53ec03.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/507807751515275266/228523ea851c54536f23667c8a53ec03.webp"
       },
-      "presence": {
-        "userId": "507807751515275266",
-        "guild": "689384013047005199",
-        "status": "online",
-        "activities": []
-      }
+      "presence": null
     },
     {
       "member": {
@@ -836,7 +1074,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1645218866039
+            "createdTimestamp": 1653401622223
           }
         ]
       }
@@ -854,6 +1092,7 @@
         "displayName": "SEO Yoshi",
         "roles": [
           "689712234460741661",
+          "689712155578335270",
           "927070215076990996",
           "718561230218068047",
           "927069514162638889",
@@ -861,7 +1100,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/f6bbe169dc8ee59869b34533109a654e.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/6e17ca27bfb35faa32543438511681b0.webp"
       },
       "user": {
         "id": "317580359766114305",
@@ -870,14 +1109,38 @@
         "flags": 256,
         "username": "yoshisthinking",
         "discriminator": "5730",
-        "avatar": "f6bbe169dc8ee59869b34533109a654e",
+        "avatar": "6e17ca27bfb35faa32543438511681b0",
         "createdTimestamp": 1495787458126,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/0.png",
         "tag": "yoshisthinking#5730",
-        "avatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/f6bbe169dc8ee59869b34533109a654e.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/f6bbe169dc8ee59869b34533109a654e.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/6e17ca27bfb35faa32543438511681b0.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/317580359766114305/6e17ca27bfb35faa32543438511681b0.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "317580359766114305",
+        "guild": "689384013047005199",
+        "status": "idle",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": "pen license haver",
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654943261475
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -906,12 +1169,12 @@
         "bot": false,
         "system": false,
         "flags": 128,
-        "username": "Law is confusing huh",
+        "username": "Acclaimed Documentary Director",
         "discriminator": "2618",
         "avatar": "e5399066518a6c8b2f93c74783ebbd35",
         "createdTimestamp": 1514444115576,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/3.png",
-        "tag": "Law is confusing huh#2618",
+        "tag": "Acclaimed Documentary Director#2618",
         "avatarURL": "https://cdn.discordapp.com/avatars/395832052735279104/e5399066518a6c8b2f93c74783ebbd35.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/395832052735279104/e5399066518a6c8b2f93c74783ebbd35.webp"
       },
@@ -926,7 +1189,7 @@
             "type": "CUSTOM",
             "url": null,
             "details": null,
-            "state": "like you would think it would be but why is it written like this it cant be efficient",
+            "state": "loading swag 🟩🟩🟩🟩🟩🟩🟩 70% complete but we'll get there",
             "applicationId": null,
             "timestamps": null,
             "syncId": null,
@@ -937,7 +1200,25 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646346374712
+            "createdTimestamp": 1654941405188
+          },
+          {
+            "id": "9b3d411c1de816df",
+            "name": "VALORANT",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "700136079562375258",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654941468588
           }
         ]
       }
@@ -947,12 +1228,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1629674558926,
         "premiumSinceTimestamp": null,
-        "nickname": "gorish",
+        "nickname": "LOS gorish",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "221539698638716929",
         "avatar": null,
-        "displayName": "gorish",
+        "displayName": "LOS gorish",
         "roles": [
           "689712234460741661",
           "718561230218068047",
@@ -960,7 +1241,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/d973b303ce73048c38e14936ae7cbff6.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/642f8b7eebcac19cb3d977cb3e658078.webp"
       },
       "user": {
         "id": "221539698638716929",
@@ -969,14 +1250,38 @@
         "flags": 64,
         "username": "Gorish",
         "discriminator": "6236",
-        "avatar": "d973b303ce73048c38e14936ae7cbff6",
+        "avatar": "642f8b7eebcac19cb3d977cb3e658078",
         "createdTimestamp": 1472889580164,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Gorish#6236",
-        "avatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/d973b303ce73048c38e14936ae7cbff6.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/d973b303ce73048c38e14936ae7cbff6.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/642f8b7eebcac19cb3d977cb3e658078.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/221539698638716929/642f8b7eebcac19cb3d977cb3e658078.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "221539698638716929",
+        "guild": "689384013047005199",
+        "status": "idle",
+        "activities": [
+          {
+            "id": "842bd1a30399a5f",
+            "name": "VALORANT",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "700136079562375258",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654930515702
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -995,7 +1300,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/cececd50fdc87b29929e65c768f24ad6.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/ed3dac3b6e7a851df781632a4295fcb9.webp"
       },
       "user": {
         "id": "235148962103951360",
@@ -1004,12 +1309,12 @@
         "flags": 65536,
         "username": "Carl-bot",
         "discriminator": "1536",
-        "avatar": "cececd50fdc87b29929e65c768f24ad6",
+        "avatar": "ed3dac3b6e7a851df781632a4295fcb9",
         "createdTimestamp": 1476134281422,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Carl-bot#1536",
-        "avatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/cececd50fdc87b29929e65c768f24ad6.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/cececd50fdc87b29929e65c768f24ad6.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/ed3dac3b6e7a851df781632a4295fcb9.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/235148962103951360/ed3dac3b6e7a851df781632a4295fcb9.webp"
       },
       "presence": {
         "userId": "235148962103951360",
@@ -1033,7 +1338,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646048978883
+            "createdTimestamp": 1654531473610
           }
         ]
       }
@@ -1050,7 +1355,9 @@
         "avatar": null,
         "displayName": "FredBoat♪♪",
         "roles": [
+          "689712234460741661",
           "689758412158009569",
+          "718561230218068047",
           "689384013047005199"
         ],
         "avatarURL": null,
@@ -1092,7 +1399,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1644613774269
+            "createdTimestamp": 1653552781658
           }
         ]
       }
@@ -1206,12 +1513,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586897384961,
         "premiumSinceTimestamp": 1642629007514,
-        "nickname": "TOR Alpha",
+        "nickname": null,
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "624324290644279370",
         "avatar": null,
-        "displayName": "TOR Alpha",
+        "displayName": "Adamphibian",
         "roles": [
           "689712234460741661",
           "847303253653848084",
@@ -1226,6 +1533,7 @@
           "699110834252546089",
           "699010011271135303",
           "758565941033304115",
+          "727053288943386677",
           "814637918978965525",
           "783145204000882708",
           "689712042365812762",
@@ -1233,48 +1541,23 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/a_04894e40f1d1506a77a930f4caa0eca9.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/34abc06279193b10efc78a01dc708d67.webp"
       },
       "user": {
         "id": "624324290644279370",
         "bot": false,
         "system": false,
         "flags": 128,
-        "username": "Alpha_",
-        "discriminator": "0761",
-        "avatar": "a_04894e40f1d1506a77a930f4caa0eca9",
+        "username": "Adamphibian",
+        "discriminator": "0019",
+        "avatar": "34abc06279193b10efc78a01dc708d67",
         "createdTimestamp": 1568920910274,
-        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
-        "tag": "Alpha_#0761",
-        "avatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/a_04894e40f1d1506a77a930f4caa0eca9.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/a_04894e40f1d1506a77a930f4caa0eca9.webp"
+        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/4.png",
+        "tag": "Adamphibian#0019",
+        "avatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/34abc06279193b10efc78a01dc708d67.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/624324290644279370/34abc06279193b10efc78a01dc708d67.webp"
       },
-      "presence": {
-        "userId": "624324290644279370",
-        "guild": "689384013047005199",
-        "status": "online",
-        "activities": [
-          {
-            "id": "custom",
-            "name": "Custom Status",
-            "type": "CUSTOM",
-            "url": null,
-            "details": null,
-            "state": "ye",
-            "applicationId": null,
-            "timestamps": null,
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": "840106673778720769",
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646346431268
-          }
-        ]
-      }
+      "presence": null
     },
     {
       "member": {
@@ -1316,12 +1599,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586660880182,
         "premiumSinceTimestamp": 1626594797588,
-        "nickname": "ETR Arkhi",
+        "nickname": "Kai Havertz",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "273981096658599936",
-        "avatar": null,
-        "displayName": "ETR Arkhi",
+        "avatar": "a_a1e5ca130e9c45470fa0cbfdaa997036",
+        "displayName": "Kai Havertz",
         "roles": [
           "689712234460741661",
           "847303253653848084",
@@ -1334,32 +1617,68 @@
           "699110834252546089",
           "930696869355597844",
           "727053288943386677",
+          "980360057726304286",
           "689712042365812762",
           "757176593507418113",
           "689384013047005199"
         ],
-        "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/273981096658599936/a_69bd30a231715892f79d20421aa921ee.webp"
+        "avatarURL": "https://cdn.discordapp.com/guilds/689384013047005199/users/273981096658599936/avatars/a_a1e5ca130e9c45470fa0cbfdaa997036.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/guilds/689384013047005199/users/273981096658599936/avatars/a_a1e5ca130e9c45470fa0cbfdaa997036.webp"
       },
       "user": {
         "id": "273981096658599936",
         "bot": false,
         "system": false,
         "flags": 256,
-        "username": "ArkhipovNZ",
+        "username": "Arkhi",
         "discriminator": "0029",
-        "avatar": "a_69bd30a231715892f79d20421aa921ee",
+        "avatar": "a_ee025d8929af5b67c26543ce949bc7ee",
         "createdTimestamp": 1485392583766,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/4.png",
-        "tag": "ArkhipovNZ#0029",
-        "avatarURL": "https://cdn.discordapp.com/avatars/273981096658599936/a_69bd30a231715892f79d20421aa921ee.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/273981096658599936/a_69bd30a231715892f79d20421aa921ee.webp"
+        "tag": "Arkhi#0029",
+        "avatarURL": "https://cdn.discordapp.com/avatars/273981096658599936/a_ee025d8929af5b67c26543ce949bc7ee.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/273981096658599936/a_ee025d8929af5b67c26543ce949bc7ee.webp"
       },
       "presence": {
         "userId": "273981096658599936",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": []
+        "activities": [
+          {
+            "id": "spotify:1",
+            "name": "Spotify",
+            "type": "LISTENING",
+            "url": null,
+            "details": "Drones",
+            "state": "Rise Against",
+            "applicationId": null,
+            "syncId": "19kQIKlqqhB7NzSEjwyX3m",
+            "platform": null,
+            "flags": 48,
+            "emoji": null,
+            "sessionId": "70d15d641fea87c9869d783d7fa8e8aa",
+            "buttons": [],
+            "createdTimestamp": 1654944806763
+          },
+          {
+            "id": "2ea91f4b3d029f2",
+            "name": "World of Warcraft",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654942477722
+          }
+        ]
       }
     },
     {
@@ -1412,7 +1731,7 @@
         "status": "online",
         "activities": [
           {
-            "id": "326527b80d7e50bf",
+            "id": "d869bd193350ff47",
             "name": "ELDEN RING",
             "type": "PLAYING",
             "url": null,
@@ -1427,7 +1746,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646346857967
+            "createdTimestamp": 1654938853441
           }
         ]
       }
@@ -1465,7 +1784,32 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/512713019495677972/62370766796089ef58e8227d3c3ee0c1.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/512713019495677972/62370766796089ef58e8227d3c3ee0c1.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "512713019495677972",
+        "guild": "689384013047005199",
+        "status": "online",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": "thieving childhood dreams",
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654941143756
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -1506,6 +1850,41 @@
     {
       "member": {
         "guildId": "689384013047005199",
+        "joinedTimestamp": 1652871268689,
+        "premiumSinceTimestamp": null,
+        "nickname": "Sky",
+        "pending": false,
+        "communicationDisabledUntilTimestamp": null,
+        "userId": "946324236513968149",
+        "avatar": null,
+        "displayName": "Sky",
+        "roles": [
+          "759881629543563316",
+          "689712234460741661",
+          "689384013047005199"
+        ],
+        "avatarURL": null,
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/946324236513968149/cdc2a242c5744a8a6669ad0df3faeeef.webp"
+      },
+      "user": {
+        "id": "946324236513968149",
+        "bot": false,
+        "system": false,
+        "flags": null,
+        "username": "Sett S Tier Player",
+        "discriminator": "8620",
+        "avatar": "cdc2a242c5744a8a6669ad0df3faeeef",
+        "createdTimestamp": 1645691679839,
+        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/0.png",
+        "tag": "Sett S Tier Player#8620",
+        "avatarURL": "https://cdn.discordapp.com/avatars/946324236513968149/cdc2a242c5744a8a6669ad0df3faeeef.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/946324236513968149/cdc2a242c5744a8a6669ad0df3faeeef.webp"
+      },
+      "presence": null
+    },
+    {
+      "member": {
+        "guildId": "689384013047005199",
         "joinedTimestamp": 1632797399418,
         "premiumSinceTimestamp": null,
         "nickname": null,
@@ -1521,7 +1900,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/e50a94a44794f0b4c494bdb80d730af8.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/6d676b5b40b661476c1d5a511cdba9d2.webp"
       },
       "user": {
         "id": "404781057838284811",
@@ -1530,12 +1909,12 @@
         "flags": null,
         "username": "Styzn",
         "discriminator": "6351",
-        "avatar": "e50a94a44794f0b4c494bdb80d730af8",
+        "avatar": "6d676b5b40b661476c1d5a511cdba9d2",
         "createdTimestamp": 1516577724657,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Styzn#6351",
-        "avatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/e50a94a44794f0b4c494bdb80d730af8.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/e50a94a44794f0b4c494bdb80d730af8.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/6d676b5b40b661476c1d5a511cdba9d2.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/404781057838284811/6d676b5b40b661476c1d5a511cdba9d2.webp"
       },
       "presence": {
         "userId": "404781057838284811",
@@ -1548,7 +1927,7 @@
             "type": "CUSTOM",
             "url": null,
             "details": null,
-            "state": "\"you carved open my heart, you can't just leave me to bleed\"",
+            "state": "\"We are born by the blood, made men by the blood, undone by the blood; Fear the old blood!\"",
             "applicationId": null,
             "timestamps": null,
             "syncId": null,
@@ -1559,25 +1938,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646340155778
-          },
-          {
-            "id": "6828714f5f51d6b5",
-            "name": "Destiny 2",
-            "type": "PLAYING",
-            "url": null,
-            "details": null,
-            "state": null,
-            "applicationId": "372438022647578634",
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": null,
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646340556481
+            "createdTimestamp": 1654907092205
           }
         ]
       }
@@ -1621,22 +1982,21 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1615534230552,
         "premiumSinceTimestamp": null,
-        "nickname": "Smol Penor",
+        "nickname": "Goku",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "348286039841832961",
         "avatar": null,
-        "displayName": "Smol Penor",
+        "displayName": "Goku",
         "roles": [
           "689712155578335270",
-          "718561230218068047",
           "755677868998262835",
           "699010011271135303",
           "757176593507418113",
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/35992599df94221606aa0ff861933f97.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/5dad575e5396a2791da973b266928e57.webp"
       },
       "user": {
         "id": "348286039841832961",
@@ -1645,12 +2005,12 @@
         "flags": 128,
         "username": "Konscrumpskin",
         "discriminator": "9591",
-        "avatar": "35992599df94221606aa0ff861933f97",
+        "avatar": "5dad575e5396a2791da973b266928e57",
         "createdTimestamp": 1503108262740,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Konscrumpskin#9591",
-        "avatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/35992599df94221606aa0ff861933f97.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/35992599df94221606aa0ff861933f97.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/5dad575e5396a2791da973b266928e57.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/348286039841832961/5dad575e5396a2791da973b266928e57.webp"
       },
       "presence": null
     },
@@ -1659,12 +2019,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1584432356855,
         "premiumSinceTimestamp": null,
-        "nickname": "Fenix",
+        "nickname": "Naoto Hachioji",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "478856234905108480",
         "avatar": null,
-        "displayName": "Fenix",
+        "displayName": "Naoto Hachioji",
         "roles": [
           "924778393042558986",
           "894871394842705991",
@@ -1673,7 +2033,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/b60549c516302313d66bfbcbb301fad9.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/320fe990f761536c3cc8c7150db334a4.webp"
       },
       "user": {
         "id": "478856234905108480",
@@ -1682,12 +2042,12 @@
         "flags": null,
         "username": "NinjX_",
         "discriminator": "7045",
-        "avatar": "b60549c516302313d66bfbcbb301fad9",
+        "avatar": "320fe990f761536c3cc8c7150db334a4",
         "createdTimestamp": 1534238623120,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/0.png",
         "tag": "NinjX_#7045",
-        "avatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/b60549c516302313d66bfbcbb301fad9.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/b60549c516302313d66bfbcbb301fad9.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/320fe990f761536c3cc8c7150db334a4.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/478856234905108480/320fe990f761536c3cc8c7150db334a4.webp"
       },
       "presence": {
         "userId": "478856234905108480",
@@ -1766,12 +2126,7 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/464687209836969984/abf2dd9090c78ddd2c8de0deebe19146.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/464687209836969984/abf2dd9090c78ddd2c8de0deebe19146.webp"
       },
-      "presence": {
-        "userId": "464687209836969984",
-        "guild": "689384013047005199",
-        "status": "dnd",
-        "activities": []
-      }
+      "presence": null
     },
     {
       "member": {
@@ -1806,24 +2161,19 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/442137673424044033/3500be1e538c93e7466217b95a379ca6.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/442137673424044033/3500be1e538c93e7466217b95a379ca6.webp"
       },
-      "presence": {
-        "userId": "442137673424044033",
-        "guild": "689384013047005199",
-        "status": "online",
-        "activities": []
-      }
+      "presence": null
     },
     {
       "member": {
         "guildId": "689384013047005199",
         "joinedTimestamp": 1600760239705,
         "premiumSinceTimestamp": null,
-        "nickname": "LON Stormmv",
+        "nickname": "Stormmv",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "526109896983445515",
         "avatar": null,
-        "displayName": "LON Stormmv",
+        "displayName": "Stormmv",
         "roles": [
           "689712234460741661",
           "927070215076990996",
@@ -1839,7 +2189,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/13522fba6227a5bb4239d961ef9385b5.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/f8f9402250abe2a5d599e118408e9cf6.webp"
       },
       "user": {
         "id": "526109896983445515",
@@ -1848,37 +2198,18 @@
         "flags": 64,
         "username": "ytstormmv",
         "discriminator": "4468",
-        "avatar": "13522fba6227a5bb4239d961ef9385b5",
+        "avatar": "f8f9402250abe2a5d599e118408e9cf6",
         "createdTimestamp": 1545504774090,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/3.png",
         "tag": "ytstormmv#4468",
-        "avatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/13522fba6227a5bb4239d961ef9385b5.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/13522fba6227a5bb4239d961ef9385b5.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/f8f9402250abe2a5d599e118408e9cf6.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/526109896983445515/f8f9402250abe2a5d599e118408e9cf6.webp"
       },
       "presence": {
         "userId": "526109896983445515",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": [
-          {
-            "id": "ef18a5cf022e3c3b",
-            "name": "Rust",
-            "type": "PLAYING",
-            "url": null,
-            "details": null,
-            "state": null,
-            "applicationId": "356888738724446208",
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": null,
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646346524329
-          }
-        ]
+        "activities": []
       }
     },
     {
@@ -1899,7 +2230,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_99e5950a3ae5c3ff325e4e85683eb573.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_797a8d3653036a4b5910d91ece9ebde6.webp"
       },
       "user": {
         "id": "199720700393553921",
@@ -1908,14 +2239,73 @@
         "flags": 256,
         "username": "Kiri",
         "discriminator": "1899",
-        "avatar": "a_99e5950a3ae5c3ff325e4e85683eb573",
+        "avatar": "a_797a8d3653036a4b5910d91ece9ebde6",
         "createdTimestamp": 1467687525605,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/4.png",
         "tag": "Kiri#1899",
-        "avatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_99e5950a3ae5c3ff325e4e85683eb573.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_99e5950a3ae5c3ff325e4e85683eb573.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_797a8d3653036a4b5910d91ece9ebde6.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/199720700393553921/a_797a8d3653036a4b5910d91ece9ebde6.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "199720700393553921",
+        "guild": "689384013047005199",
+        "status": "dnd",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": "marry chrestmas!",
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": "787006843117240361",
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654902846551
+          },
+          {
+            "id": "d38881bdb6131246",
+            "name": "Counter-Strike: Global Offensive",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "356875057940791296",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654943141502
+          },
+          {
+            "id": "spotify:1",
+            "name": "Spotify",
+            "type": "LISTENING",
+            "url": null,
+            "details": "SWING’20 - feat.元晴 & 柴田亮",
+            "state": "BimBomBam Orchestra; 元晴; 柴田亮",
+            "applicationId": null,
+            "syncId": "3o4f04rImE3J6epUXl2HNO",
+            "platform": null,
+            "flags": 48,
+            "emoji": null,
+            "sessionId": "3e8a9d2f1e90accaa3a4d27dfda917d8",
+            "buttons": [],
+            "createdTimestamp": 1654944843388
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -1934,7 +2324,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/2bf666b862b2d3dbee301b1f8921479b.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/4dc0023aa3a046132be85461bf6b55af.webp"
       },
       "user": {
         "id": "263069112887017473",
@@ -1943,14 +2333,55 @@
         "flags": 256,
         "username": "hedonistic",
         "discriminator": "8108",
-        "avatar": "2bf666b862b2d3dbee301b1f8921479b",
+        "avatar": "4dc0023aa3a046132be85461bf6b55af",
         "createdTimestamp": 1482790964100,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/3.png",
         "tag": "hedonistic#8108",
-        "avatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/2bf666b862b2d3dbee301b1f8921479b.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/2bf666b862b2d3dbee301b1f8921479b.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/4dc0023aa3a046132be85461bf6b55af.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/263069112887017473/4dc0023aa3a046132be85461bf6b55af.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "263069112887017473",
+        "guild": "689384013047005199",
+        "status": "dnd",
+        "activities": [
+          {
+            "id": "custom",
+            "name": "Custom Status",
+            "type": "CUSTOM",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": null,
+            "timestamps": null,
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654938201598
+          },
+          {
+            "id": "56d68ddabd845995",
+            "name": "Call of Duty®: Black Ops III",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": null,
+            "syncId": null,
+            "platform": "ps4",
+            "party": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654944916899
+          }
+        ]
+      }
     },
     {
       "member": {
@@ -2069,7 +2500,7 @@
         "communicationDisabledUntilTimestamp": null,
         "userId": "336041460065370112",
         "avatar": null,
-        "displayName": "Booba.",
+        "displayName": "ViegoMainToCounterDeep/Agro",
         "roles": [
           "759881629543563316",
           "689712234460741661",
@@ -2080,27 +2511,46 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/ee45415e5ad00ea1e8ef0c02b5abc4ab.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/899cc499b7e6594b343ac390bdcbb92e.webp"
       },
       "user": {
         "id": "336041460065370112",
         "bot": false,
         "system": false,
         "flags": null,
-        "username": "Booba.",
+        "username": "ViegoMainToCounterDeep/Agro",
         "discriminator": "5381",
-        "avatar": "ee45415e5ad00ea1e8ef0c02b5abc4ab",
+        "avatar": "899cc499b7e6594b343ac390bdcbb92e",
         "createdTimestamp": 1500188927428,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
-        "tag": "Booba.#5381",
-        "avatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/ee45415e5ad00ea1e8ef0c02b5abc4ab.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/ee45415e5ad00ea1e8ef0c02b5abc4ab.webp"
+        "tag": "ViegoMainToCounterDeep/Agro#5381",
+        "avatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/899cc499b7e6594b343ac390bdcbb92e.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/336041460065370112/899cc499b7e6594b343ac390bdcbb92e.webp"
       },
       "presence": {
         "userId": "336041460065370112",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": []
+        "activities": [
+          {
+            "id": "f3e021d7aa6f29a7",
+            "name": "STAR WARS™ Battlefront™ II",
+            "type": "PLAYING",
+            "url": null,
+            "details": null,
+            "state": null,
+            "applicationId": "363429717698936852",
+            "syncId": null,
+            "platform": null,
+            "party": null,
+            "assets": null,
+            "flags": 0,
+            "emoji": null,
+            "sessionId": null,
+            "buttons": [],
+            "createdTimestamp": 1654942540640
+          }
+        ]
       }
     },
     {
@@ -2156,7 +2606,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/9b1c40c49fc9e4d53d71529216517d78.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/5729a7f5b9dc55054cd6e79c4b103a74.webp"
       },
       "user": {
         "id": "83010416610906112",
@@ -2165,12 +2615,12 @@
         "flags": 65536,
         "username": "Nightbot",
         "discriminator": "0001",
-        "avatar": "9b1c40c49fc9e4d53d71529216517d78",
+        "avatar": "5729a7f5b9dc55054cd6e79c4b103a74",
         "createdTimestamp": 1439861625579,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
         "tag": "Nightbot#0001",
-        "avatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/9b1c40c49fc9e4d53d71529216517d78.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/9b1c40c49fc9e4d53d71529216517d78.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/5729a7f5b9dc55054cd6e79c4b103a74.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/83010416610906112/5729a7f5b9dc55054cd6e79c4b103a74.webp"
       },
       "presence": {
         "userId": "83010416610906112",
@@ -2183,13 +2633,13 @@
       "member": {
         "guildId": "689384013047005199",
         "joinedTimestamp": 1602886084654,
-        "premiumSinceTimestamp": 1644033641481,
-        "nickname": "!SH DCRalph",
+        "premiumSinceTimestamp": null,
+        "nickname": "lDCRalph",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "472872051359612945",
         "avatar": null,
-        "displayName": "!SH DCRalph",
+        "displayName": "lDCRalph",
         "roles": [
           "689712234460741661",
           "924210376571240448",
@@ -2197,7 +2647,6 @@
           "689712155578335270",
           "927070215076990996",
           "718561230218068047",
-          "805174688162643991",
           "699010011271135303",
           "698746745987006487",
           "814637918978965525",
@@ -2206,7 +2655,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/9009d622ce38f69bfb5247ef18cb414f.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/935827dd3a83135e602f565de1afe233.webp"
       },
       "user": {
         "id": "472872051359612945",
@@ -2215,12 +2664,12 @@
         "flags": 256,
         "username": "DCRalph",
         "discriminator": "1337",
-        "avatar": "9009d622ce38f69bfb5247ef18cb414f",
+        "avatar": "935827dd3a83135e602f565de1afe233",
         "createdTimestamp": 1532811882582,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/2.png",
         "tag": "DCRalph#1337",
-        "avatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/9009d622ce38f69bfb5247ef18cb414f.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/9009d622ce38f69bfb5247ef18cb414f.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/935827dd3a83135e602f565de1afe233.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/472872051359612945/935827dd3a83135e602f565de1afe233.webp"
       },
       "presence": {
         "userId": "472872051359612945",
@@ -2284,7 +2733,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646264478217
+            "createdTimestamp": 1653754215360
           }
         ]
       }
@@ -2343,7 +2792,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/2fa57b425415134d4f8b279174131ad6.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/3b376fff30bfb0be0fac67003e0f8dcf.webp"
       },
       "user": {
         "id": "204255221017214977",
@@ -2352,12 +2801,12 @@
         "flags": 65536,
         "username": "YAGPDB.xyz",
         "discriminator": "8760",
-        "avatar": "2fa57b425415134d4f8b279174131ad6",
+        "avatar": "3b376fff30bfb0be0fac67003e0f8dcf",
         "createdTimestamp": 1468768639569,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/0.png",
         "tag": "YAGPDB.xyz#8760",
-        "avatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/2fa57b425415134d4f8b279174131ad6.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/2fa57b425415134d4f8b279174131ad6.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/3b376fff30bfb0be0fac67003e0f8dcf.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/204255221017214977/3b376fff30bfb0be0fac67003e0f8dcf.webp"
       },
       "presence": {
         "userId": "204255221017214977",
@@ -2366,7 +2815,7 @@
         "activities": [
           {
             "id": "ec0b28a579ecb4bd",
-            "name": "the game of life",
+            "name": "nobody understands me, what even is the point anymore",
             "type": "PLAYING",
             "url": null,
             "details": null,
@@ -2381,7 +2830,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1645801619406
+            "createdTimestamp": 1654934271960
           }
         ]
       }
@@ -2433,7 +2882,7 @@
             "type": "CUSTOM",
             "url": null,
             "details": null,
-            "state": "I'm not afraid of death. I just don't want to be there when it happens.",
+            "state": "Guess who got the Rona!",
             "applicationId": null,
             "timestamps": null,
             "syncId": null,
@@ -2443,7 +2892,7 @@
             "flags": 0,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646346822493
+            "createdTimestamp": 1654944909691
           }
         ]
       }
@@ -2453,12 +2902,12 @@
         "guildId": "689384013047005199",
         "joinedTimestamp": 1614934998649,
         "premiumSinceTimestamp": null,
-        "nickname": null,
+        "nickname": "raging alcoholic",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "468692902508363777",
         "avatar": null,
-        "displayName": "deeznuts",
+        "displayName": "raging alcoholic",
         "roles": [
           "718561230218068047",
           "699010011271135303",
@@ -2503,7 +2952,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/484b4f9fa4effdc6e05194301d0340a1.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/4b6fae35f79c58551d0851c4a4e8dea2.webp"
       },
       "user": {
         "id": "318617312318193675",
@@ -2512,39 +2961,14 @@
         "flags": null,
         "username": "Ben_Zed",
         "discriminator": "4778",
-        "avatar": "484b4f9fa4effdc6e05194301d0340a1",
+        "avatar": "4b6fae35f79c58551d0851c4a4e8dea2",
         "createdTimestamp": 1496034686880,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/3.png",
         "tag": "Ben_Zed#4778",
-        "avatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/484b4f9fa4effdc6e05194301d0340a1.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/484b4f9fa4effdc6e05194301d0340a1.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/4b6fae35f79c58551d0851c4a4e8dea2.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/318617312318193675/4b6fae35f79c58551d0851c4a4e8dea2.webp"
       },
-      "presence": {
-        "userId": "318617312318193675",
-        "guild": "689384013047005199",
-        "status": "dnd",
-        "activities": [
-          {
-            "id": "custom",
-            "name": "Custom Status",
-            "type": "CUSTOM",
-            "url": null,
-            "details": null,
-            "state": "it is I. I... EATER",
-            "applicationId": null,
-            "timestamps": null,
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": null,
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646346411392
-          }
-        ]
-      }
+      "presence": null
     },
     {
       "member": {
@@ -2593,10 +3017,14 @@
         "avatar": null,
         "displayName": "Infinite_Arrow",
         "roles": [
+          "689712234460741661",
+          "948861091964936223",
           "871146564398231654",
           "941582793790586890",
+          "861781249122762752",
           "718561230218068047",
           "699010011271135303",
+          "733068764949774438",
           "758565941033304115",
           "689712042365812762",
           "757176593507418113",
@@ -2619,12 +3047,7 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/391640729765675010/6e210f350e9222a46b47f7b939890b38.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/391640729765675010/6e210f350e9222a46b47f7b939890b38.webp"
       },
-      "presence": {
-        "userId": "391640729765675010",
-        "guild": "689384013047005199",
-        "status": "idle",
-        "activities": []
-      }
+      "presence": null
     },
     {
       "member": {
@@ -2666,7 +3089,7 @@
         "activities": [
           {
             "id": "ec0b28a579ecb4bd",
-            "name": "!fn help | 70717 Linked Users",
+            "name": "/help | 57741 Servers",
             "type": "LISTENING",
             "url": null,
             "details": null,
@@ -2681,7 +3104,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646346964210
+            "createdTimestamp": 1654944889651
           }
         ]
       }
@@ -2755,67 +3178,45 @@
         "avatarURL": "https://cdn.discordapp.com/avatars/452399671118397443/aec14cda80b98d3f190b698783baec6e.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/452399671118397443/aec14cda80b98d3f190b698783baec6e.webp"
       },
-      "presence": {
-        "userId": "452399671118397443",
-        "guild": "689384013047005199",
-        "status": "idle",
-        "activities": [
-          {
-            "id": "custom",
-            "name": "Custom Status",
-            "type": "CUSTOM",
-            "url": null,
-            "details": null,
-            "state": "Tally-ho!",
-            "applicationId": null,
-            "timestamps": null,
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": null,
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646346524387
-          }
-        ]
-      }
+      "presence": null
     },
     {
       "member": {
         "guildId": "689384013047005199",
         "joinedTimestamp": 1586668761340,
-        "premiumSinceTimestamp": null,
-        "nickname": "SFS Racingcar",
+        "premiumSinceTimestamp": 1649478262331,
+        "nickname": "NOOT NOOT",
         "pending": false,
         "communicationDisabledUntilTimestamp": null,
         "userId": "557413703029358593",
-        "avatar": null,
-        "displayName": "SFS Racingcar",
+        "avatar": "a_2f5355216a70f706098935af43fee191",
+        "displayName": "NOOT NOOT",
         "roles": [
           "689712234460741661",
           "948861091964936223",
           "847303253653848084",
           "924779625668825119",
+          "689712155578335270",
           "941582793790586890",
           "735746020830347294",
           "861781249122762752",
           "927070215076990996",
           "718561230218068047",
           "755677868998262835",
+          "805174688162643991",
           "924178158092177459",
           "699010011271135303",
           "758565941033304115",
           "727053288943386677",
           "698746745987006487",
           "814637918978965525",
+          "980360057726304286",
           "689712042365812762",
           "757176593507418113",
           "689384013047005199"
         ],
-        "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/557413703029358593/a_9e418394314fbe0342a7b98e837c6853.webp"
+        "avatarURL": "https://cdn.discordapp.com/guilds/689384013047005199/users/557413703029358593/avatars/a_2f5355216a70f706098935af43fee191.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/guilds/689384013047005199/users/557413703029358593/avatars/a_2f5355216a70f706098935af43fee191.webp"
       },
       "user": {
         "id": "557413703029358593",
@@ -2837,7 +3238,7 @@
         "status": "online",
         "activities": [
           {
-            "id": "4de856cbc51cf892",
+            "id": "b300c0996c9e9d8b",
             "name": "World of Warcraft",
             "type": "PLAYING",
             "url": null,
@@ -2852,7 +3253,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646346870352
+            "createdTimestamp": 1654911853829
           }
         ]
       }
@@ -2873,7 +3274,7 @@
           "689384013047005199"
         ],
         "avatarURL": null,
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/6f6430202b0b9e1db16124dcfab83841.webp"
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/89a04bb4634a174dba511c386db08d2a.webp"
       },
       "user": {
         "id": "147783990302998528",
@@ -2882,14 +3283,19 @@
         "flags": null,
         "username": "Crafty",
         "discriminator": "0253",
-        "avatar": "6f6430202b0b9e1db16124dcfab83841",
+        "avatar": "89a04bb4634a174dba511c386db08d2a",
         "createdTimestamp": 1455304848982,
         "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/3.png",
         "tag": "Crafty#0253",
-        "avatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/6f6430202b0b9e1db16124dcfab83841.webp",
-        "displayAvatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/6f6430202b0b9e1db16124dcfab83841.webp"
+        "avatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/89a04bb4634a174dba511c386db08d2a.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/147783990302998528/89a04bb4634a174dba511c386db08d2a.webp"
       },
-      "presence": null
+      "presence": {
+        "userId": "147783990302998528",
+        "guild": "689384013047005199",
+        "status": "online",
+        "activities": []
+      }
     },
     {
       "member": {
@@ -2946,7 +3352,7 @@
             "emoji": null,
             "sessionId": null,
             "buttons": [],
-            "createdTimestamp": 1646169479733
+            "createdTimestamp": 1654880195183
           }
         ]
       }
@@ -2983,6 +3389,40 @@
         "tag": "Hypixel Bot#2673",
         "avatarURL": "https://cdn.discordapp.com/avatars/333422871567400961/afd25e730e0ac183091d14086fb9a130.webp",
         "displayAvatarURL": "https://cdn.discordapp.com/avatars/333422871567400961/afd25e730e0ac183091d14086fb9a130.webp"
+      },
+      "presence": null
+    },
+    {
+      "member": {
+        "guildId": "689384013047005199",
+        "joinedTimestamp": 1646980000975,
+        "premiumSinceTimestamp": null,
+        "nickname": null,
+        "pending": false,
+        "communicationDisabledUntilTimestamp": null,
+        "userId": "906779792320393216",
+        "avatar": null,
+        "displayName": "Sensei777",
+        "roles": [
+          "871146564398231654",
+          "689384013047005199"
+        ],
+        "avatarURL": null,
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/906779792320393216/cb02d19618c1b8a8e0ddc75de8daf4ee.webp"
+      },
+      "user": {
+        "id": "906779792320393216",
+        "bot": false,
+        "system": false,
+        "flags": null,
+        "username": "Sensei777",
+        "discriminator": "3391",
+        "avatar": "cb02d19618c1b8a8e0ddc75de8daf4ee",
+        "createdTimestamp": 1636263549643,
+        "defaultAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png",
+        "tag": "Sensei777#3391",
+        "avatarURL": "https://cdn.discordapp.com/avatars/906779792320393216/cb02d19618c1b8a8e0ddc75de8daf4ee.webp",
+        "displayAvatarURL": "https://cdn.discordapp.com/avatars/906779792320393216/cb02d19618c1b8a8e0ddc75de8daf4ee.webp"
       },
       "presence": null
     },
@@ -3133,27 +3573,7 @@
         "userId": "884606241022836746",
         "guild": "689384013047005199",
         "status": "online",
-        "activities": [
-          {
-            "id": "ec0b28a579ecb4bd",
-            "name": "cock and ball torture",
-            "type": "PLAYING",
-            "url": null,
-            "details": null,
-            "state": null,
-            "applicationId": null,
-            "timestamps": null,
-            "syncId": null,
-            "platform": null,
-            "party": null,
-            "assets": null,
-            "flags": 0,
-            "emoji": null,
-            "sessionId": null,
-            "buttons": [],
-            "createdTimestamp": 1646346961983
-          }
-        ]
+        "activities": []
       }
     }
   ]
