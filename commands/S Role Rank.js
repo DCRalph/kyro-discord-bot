@@ -19,21 +19,24 @@ const create = (client) => {
 
       let members = data.members
 
-      // members = members.sort((a, b) => {
-      //   return b.member.roles.length - a.member.roles.length
-      // })
+      members = members.sort((a, b) => {
+        return (
+          b.member.roles.cache.map((e) => e).length -
+          a.member.roles.cache.map((e) => e).length
+        )
+      })
 
       let usernames = ''
       let roles = ''
 
       members.forEach((m) => {
         usernames += `${m.user.username}\n`
-        roles += `${m.member.roles.length}\n`
-        console.log(m.member.roles)
+        roles += `${m.member.roles.cache.map((e) => e).length}\n`
       })
 
       let embed = new Discord.MessageEmbed()
       embed.setTitle('Role Rank')
+      embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
       embed.addField('Username:', usernames, true)
       embed.addField('Roles:', roles, true)
