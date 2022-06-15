@@ -13,9 +13,15 @@ const create = (client) => {
     [],
     async (message, args) => {
       const guild = message.guild
-      util.serverInfo(client, guild.id)
+      const data = util.serverInfo(client, guild.id)
 
-      console.log('serverInfo done')
+      let members = data.members
+
+      members = members.sort((a, b) => {
+        return b.roles.length - a.roles.length
+      })
+
+      console.log(members)
     }
   )
 }
