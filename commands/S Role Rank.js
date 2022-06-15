@@ -30,7 +30,7 @@ const create = (client) => {
       let roles = ''
 
       members.forEach((m, i) => {
-        usernames += `#${i + 1} ${m.user.username}\n`
+        usernames += `${i + 1} ${m.user.username}\n`
         roles += `${m.member.roles.cache.map((e) => e).length}\n`
       })
 
