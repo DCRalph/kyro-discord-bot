@@ -5,7 +5,7 @@ import command from '../command.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Command(client, ['amogus'], 'amogus', async (message) => {
+  new command.Legacy(client, ['amogus'], 'amogus', async (message) => {
     message.channel.send({
       content:
         'https://tenor.com/view/19dollar-fortnite-card-among-us-amogus-sus-red-among-sus-gif-20549014',

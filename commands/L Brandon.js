@@ -5,7 +5,7 @@ import Discord from 'discord.js'
 import db from '../db.js'
 
 const create = (client) => {
-  new command.Leagcy(client, ['brandon ='], 'yes', async (message) => {
+  new command.Legacy(client, ['brandon ='], 'yes', async (message) => {
     let [first, ...rest] = message.content
       .toLowerCase()
       .replace('brandon =', '')

@@ -5,7 +5,7 @@ import command from '../command.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Leagcy(client, ['ping'], 'Gets ping(ms)', async (message) => {
+  new command.Legacy(client, ['ping'], 'Gets ping(ms)', async (message) => {
     const m = await message.channel.send({
       content: 'Ping?',
     })

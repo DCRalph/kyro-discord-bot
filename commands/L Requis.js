@@ -5,7 +5,7 @@ import command from '../command.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Leagcy(client, ['requis'], 'lord requis', async (message) => {
+  new command.Legacy(client, ['requis'], 'lord requis', async (message) => {
     message.channel.send({
       files: [
         'https://cdn.discordapp.com/attachments/700110467049193523/965923204407365692/avatars-qFNWvHxdUwvGWEQZ-taPVRA-t240x240.jpg',

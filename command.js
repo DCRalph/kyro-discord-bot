@@ -197,7 +197,7 @@ const getCommand = (cmd) => {
 
 export default {
   Command,
-  Leagcy: Command,
+  Legacy: Command,
   Slash,
   all,
   commands,

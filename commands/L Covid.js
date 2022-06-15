@@ -5,7 +5,7 @@ import Discord from 'discord.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Leagcy(
+  new command.Legacy(
     client,
     ['covid', 'virus', 'crona', 'rona'],
     'Covid stats in nz or other country',

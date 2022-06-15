@@ -5,7 +5,7 @@ import command from '../command.js'
 // import db from '../db.js'
 
 const create = (client) => {
-  new command.Leagcy(client, ['sus', 'baka'], 'sussy baka', async (message) => {
+  new command.Legacy(client, ['sus', 'baka'], 'sussy baka', async (message) => {
     message.channel.send({
       files: [
         'https://cdn.discordapp.com/attachments/766784398032764958/945924971035783210/sus.mp3',
