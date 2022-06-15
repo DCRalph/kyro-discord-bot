@@ -40,7 +40,7 @@ const create = (client) => {
       embed.setTitle('Role Rank')
       embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
-      embed.addField('Rank', rank, true)
+      embed.addField('Rank:', rank, true)
       embed.addField('Username:', usernames, true)
       embed.addField('Roles:', roles, true)
 
