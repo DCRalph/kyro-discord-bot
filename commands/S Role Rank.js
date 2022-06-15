@@ -10,6 +10,7 @@ const create = (client) => {
     client,
     ['role-rank'],
     'Rank members by amount of roles',
+    [],
     async (message, args) => {
       const guild = message.guild
       util.serverInfo(client, guild.id)
