@@ -31,7 +31,7 @@ const create = (client) => {
       let rank = ''
 
       members.forEach((m, i) => {
-        rank += `${i + 1}`
+        rank += `${i + 1}\n`
         usernames += `${m.user.username}\n`
         roles += `${m.member.roles.cache.map((e) => e).length}\n`
       })
