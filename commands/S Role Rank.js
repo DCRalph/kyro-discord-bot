@@ -28,9 +28,11 @@ const create = (client) => {
 
       let usernames = ''
       let roles = ''
+      let rank = ''
 
       members.forEach((m, i) => {
-        usernames += `${i + 1} ${m.user.username}\n`
+        rank += `${i + 1}`
+        usernames += `${m.user.username}\n`
         roles += `${m.member.roles.cache.map((e) => e).length}\n`
       })
 
@@ -38,6 +40,7 @@ const create = (client) => {
       embed.setTitle('Role Rank')
       embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
+      embed.addField('Rank', rank, true)
       embed.addField('Username:', usernames, true)
       embed.addField('Roles:', roles, true)
 
