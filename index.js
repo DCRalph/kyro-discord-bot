@@ -61,6 +61,19 @@ client.on('messageCreate', async (message) => {
   if (message.author.bot) return
 
   if (enable) command.runAllText(message, client)
+
+  if (
+    message.author.id == '557413703029358593'
+  ) {
+    // if mesage rorry
+    if (!message.content.includes('mum')) return
+
+    const responses = ['rory shut ur bitch ass up', 'rory no one gives a fuck']
+
+    const res = responses[Math.floor(Math.random() * responses.length)]
+
+    message.channel.send(res)
+  }
 })
 
 client.on('interactionCreate', (interaction) => {
