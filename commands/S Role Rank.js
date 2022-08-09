@@ -6,7 +6,7 @@ import db from '../db.js'
 import util from '../util.js'
 
 const create = (client) => {
-  return new command.Slash(
+  new command.Slash(
     client,
     ['role-rank'],
     'Rank members by amount of roles',

@@ -1,4 +1,5 @@
 import fs from 'fs'
+import db from './db.js'
 
 const defaultAct = {
   status: 'online',
@@ -225,6 +226,8 @@ const mineSweeper = (size, bombs) => {
   return out
 }
 
+
+
 export default {
   defaultAct,
   Timer,
@@ -232,4 +235,5 @@ export default {
   serverInfo,
   sanitizer,
   mineSweeper,
+  
 }

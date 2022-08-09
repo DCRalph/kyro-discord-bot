@@ -50,9 +50,6 @@ client.on('ready', async () => {
       }
     }
   }
-
-  // let cmdss = await client.application?.commands.fetch()
-  // log.log(cmdss)
 })
 
 // log.log(command.commands)
@@ -62,9 +59,7 @@ client.on('messageCreate', async (message) => {
 
   if (enable) command.runAllText(message, client)
 
-  if (
-    message.author.id == '557413703029358593'
-  ) {
+  if (message.author.id == '557413703029358593') {
     // if mesage rorry
     if (!message.content.includes('mum')) return
 
@@ -96,6 +91,71 @@ client.on('interactionCreate', (interaction) => {
   if (interaction.isButton()) {
     log.log(interaction)
   }
+})
+
+client.on('presenceUpdate', (oldMember, newMember) => {
+  // log.log('old', oldMember)
+  // log.log('new', newMember)
+
+  if (newMember.user.bot) return
+  if (newMember.guild.id != 689384013047005199) return
+
+  db.read()
+  const now = Date.now()
+
+  const status = newMember.status
+
+  if (typeof db.data.userDB[newMember.user.id] == 'undefined') {
+    db.data.userDB[newMember.user.id] = {
+      id: newMember.user.id,
+      status: status,
+      last: now,
+      statuses: {
+        online: 0,
+        idle: 0,
+        dnd: 0,
+        offline: 0,
+      },
+      games: {},
+    }
+  }
+
+  const oldStatus = db.data.userDB[newMember.user.id].status
+
+  db.data.userDB[newMember.user.id].username = newMember.user.username
+
+  if (oldStatus != status) {
+    log.info(
+      `${newMember.user.username} changed status from ${oldStatus} to ${status}`
+    )
+  }
+
+  if (['online', 'idle', 'dnd', 'offline'].includes(oldStatus)) {
+    db.data.userDB[newMember.user.id].statuses[oldStatus] +=
+      now - db.data.userDB[newMember.user.id].last
+  } else {
+    console.log('invalid status')
+  }
+
+  if (newMember.activities.length > 0) {
+    const games = newMember.activities
+    games.forEach((game) => {
+      if (game.type != 'PLAYING') return
+
+      if (
+        typeof db.data.userDB[newMember.user.id].games[game.name] == 'undefined'
+      ) {
+        db.data.userDB[newMember.user.id].games[game.name] = 0
+      }
+      db.data.userDB[newMember.user.id].games[game.name] +=
+        now - db.data.userDB[newMember.user.id].last
+    })
+  }
+
+  db.data.userDB[newMember.user.id].last = now
+  db.data.userDB[newMember.user.id].status = status
+
+  db.write()
 })
 
 client.login(settings.kyro)
