@@ -27,8 +27,6 @@ const create = (client) => {
         return
       }
 
-      console.log(user)
-
       db.read()
 
       if (typeof db.data.userDB[user.user.id] == 'undefined') {
@@ -81,8 +79,6 @@ const create = (client) => {
       db.read()
 
       const users = Object.values(db.data.userDB)
-
-      console.log(users)
 
       const sorted = users.sort((a, b) => {
         return b.statuses.online - a.statuses.online
