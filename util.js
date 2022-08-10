@@ -252,11 +252,9 @@ const userStatuses = (gMember) => {
 
   db.data.userDB[gMember.user.id].username = gMember.user.username
 
-  if (oldStatus != status) {
-    log.info(
-      `${gMember.user.username} changed status from ${oldStatus} to ${status}`
-    )
-  }
+  log.info(
+    `${gMember.user.username} changed status from ${oldStatus} to ${status}`
+  )
 
   if (['online', 'idle', 'dnd', 'offline'].includes(oldStatus)) {
     db.data.userDB[gMember.user.id].statuses[oldStatus] +=
