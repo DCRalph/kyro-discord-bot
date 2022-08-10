@@ -253,7 +253,9 @@ const userStatuses = (gMember) => {
   db.data.userDB[gMember.user.id].username = gMember.user.username
 
   log.info(
-    `${gMember.user.username} changed status from ${oldStatus} to ${status}`
+    `${log.c.magenta(gMember.user.username)} changed status from ${log.c.red(
+      oldStatus
+    )} to ${log.c.red(status)}`
   )
 
   if (['online', 'idle', 'dnd', 'offline'].includes(oldStatus)) {
@@ -284,6 +286,93 @@ const userStatuses = (gMember) => {
   db.write()
 }
 
+const calcCringe = (games) => {
+  let cringe = 0
+  let chad = 0
+  let texts = []
+
+  const has = (obj, word) => {
+    return Object.keys(obj).some((key) => {
+      console.log(key, word, key.toLowerCase().includes(word.toLowerCase()))
+      return key.toLowerCase().includes(word.toLowerCase())
+    })
+  }
+
+  const addText = (game, text) => {
+    texts.push({ game, text })
+  }
+
+  console.log(has(games, 'minecraft'))
+
+  const times = {
+    hour: 3600000,
+    minute: 60000,
+    day: 86400000,
+    week: 604800000,
+    month: 2592000000,
+    year: 31536000000,
+  }
+
+  if (has(games, 'League of Legends')) {
+    let time = games['League of Legends']
+
+    if (time < times.hour) {
+      cringe += 100
+      addText(
+        'League of Legends',
+        'Your have league of legends on your computer. Burn it.'
+      )
+    } else if (time < times.day) {
+      cringe += 500
+      addText('League of Legends', 'Please get help before its too late.')
+    } else if (time < times.week) {
+      cringe += 1000
+      addText(
+        'League of Legends',
+        'Your a lost cause. Nothing can be done to save you.'
+      )
+    }
+  }
+
+  if (has(games, 'Overwatch')) {
+    let time = games['Overwatch']
+
+    if (time < times.hour) {
+      cringe += 10
+      addText('Overwatch', 'Play Overwatch more.')
+    } else if (time < times.day) {
+      chad += 10
+      addText('Overwatch', 'Play Overwatch more.')
+    } else if (time < times.month) {
+      cringe += 20
+      addText('Overwatch', 'Good job.')
+    } else if (time > times.month) {
+      cringe += 10
+      chad += 100
+      addText('Overwatch', 'Touch grass.')
+    }
+  }
+
+  if (has(games, 'Minecraft')) {
+    let time = games['Minecraft']
+
+    if (time < times.day) {
+      chad += 10
+    } else if (time < times.week) {
+      chad += 20
+      addText('Minecraft', 'Dedication')
+    } else if (time < times.month) {
+      chad += 50
+      addText('Minecraft', 'Serious dedication')
+    } else if (time > times.month) {
+      chad += 100
+      addText('Minecraft', 'Minecraft chad.')
+    }
+  }
+
+  return { cringe, chad, texts }
+}
+
 export default {
   defaultAct,
   Timer,
@@ -292,4 +381,5 @@ export default {
   sanitizer,
   mineSweeper,
   userStatuses,
+  calcCringe,
 }

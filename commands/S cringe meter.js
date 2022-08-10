@@ -9,8 +9,8 @@ import pms from 'pretty-ms'
 const create = (client) => {
   new command.Slash(
     client,
-    ['user-status'],
-    'Status time and user status history',
+    ['cringe-meter'],
+    'ranks based on games played',
     [
       {
         name: 'user',
@@ -25,9 +25,7 @@ const create = (client) => {
       if (u?.user.bot) {
         const embed = new Discord.MessageEmbed()
 
-        embed.setTitle(
-          `${u.user.username} is a bot. Can not get status of bot.`
-        )
+        embed.setTitle(`${u.user.username} is a bot. Bots are Gigachad`)
         embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
         interaction.reply({
@@ -51,50 +49,24 @@ const create = (client) => {
 
         const g = await client.guilds.fetch(u.member.guild.id)
         const m = await g.members.fetch(u.user.id)
-
         util.userStatuses(m)
 
         db.read()
-
         const userDB = db.data.userDB[u.user.id]
 
-        let embed = new Discord.MessageEmbed()
-        embed.setTitle(`${u.user.username}'s status history`)
+        const { cringe, chad, texts } = util.calcCringe(userDB.games)
+
+        console.log(cringe, chad, texts)
+
+        const embed = new Discord.MessageEmbed()
+        embed.setTitle(`${u.user.username}'s cringe meter`)
         embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
-        embed.addField('Status:', userDB.status, false)
+        embed.addField('Cringe/Chad', `${cringe}/${chad}`)
 
-        embed.addField('Online Time:', pms(userDB.statuses.online), true)
-        embed.addField('Idle Time:', pms(userDB.statuses.idle), true)
-        embed.addField('\u200b', '\u200b', true)
-
-        embed.addField('DND Time:', pms(userDB.statuses.dnd), true)
-        embed.addField(
-          'Total Time:',
-          pms(
-            userDB.statuses.online + userDB.statuses.idle + userDB.statuses.dnd
-          ),
-          true
-        )
-        embed.addField('\u200b', '\u200b', true)
-
-        embed.addField('Offline Time:', pms(userDB.statuses.offline), false)
-
-        const games = Object.entries(userDB.games).sort((a, b) => {
-          return b[1] - a[1]
+        texts.forEach((text) => {
+          embed.addField(text.game, text.text)
         })
-
-        if (games.length > 0) {
-          let gameString = ''
-          games.forEach((g) => {
-            gameString += `${g[0]}: ${pms(g[1])}\n`
-          })
-          embed.addField('Games:', gameString, false)
-        }
-
-        // games.forEach((g) => {
-        //   embed.addField(g[0], pms(g[1]), false)
-        // })
 
         interaction.reply({
           embeds: [embed],
@@ -103,51 +75,53 @@ const create = (client) => {
         return
       } else {
         db.read()
-        const users = Object.values(db.data.userDB)
+        const users1 = Object.values(db.data.userDB)
 
         const g = await client.guilds.fetch(interaction.guild.id)
         const m = await g.members.fetch()
 
-        users.forEach((u) => {
+        users1.forEach((u) => {
           const m2 = m.get(u.id)
           console.log(m2.user.username)
           util.userStatuses(m2)
         })
 
         db.read()
-
-        const users2 = Object.values(db.data.userDB)
-
-        const sorted = users2.sort((a, b) => {
-          let A = a.statuses.online + a.statuses.idle + a.statuses.dnd
-          let B = b.statuses.online + b.statuses.idle + b.statuses.dnd
-          return B - A
-        })
+        const users = Object.values(db.data.userDB)
+        const sorted = users
+          .map((u) => {
+            return { ...u, cringe: util.calcCringe(u.games) }
+          })
+          .sort((a, b) => {
+            let A = a.cringe.cringe / a.cringe.chad
+            let B = b.cringe.cringe / b.cringe.chad
+            return B - A
+          })
 
         let embed = new Discord.MessageEmbed()
-        embed.setTitle('Status Rank')
+        embed.setTitle('Cringe Meter')
         embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
-        embed.setDescription(
-          'Do `/user-status <user>` to get more info on a user'
-        )
         embed.setFooter({ text: `${sorted.length} users` })
 
         let rank = ''
         let usernames = ''
-        let time = ''
+        let cringeChad = ''
         sorted.forEach((u, i) => {
           rank += `${i + 1}\n`
           usernames += `${u.username}\n`
-          time += `${pms(u.statuses.online)}\n`
+          cringeChad += `${u.cringe.cringe}/${u.cringe.chad}\n`
         })
-        embed.addField('Rank:', rank, true)
-        embed.addField('Username:', usernames, true)
-        embed.addField('Time:', time, true)
+
+        embed.addField('Rank', rank, true)
+        embed.addField('Usernames', usernames, true)
+        embed.addField('Cringe/Chad', cringeChad, true)
 
         interaction.reply({
           embeds: [embed],
         })
+
+        return
       }
 
       return
