@@ -268,7 +268,7 @@ const userStatuses = (gMember) => {
   if (gMember.presence?.activities.length > 0) {
     const games = gMember.presence.activities
     games.forEach((game) => {
-      if (['PLAYING', 'LISTENING'].includes(game.type)) return
+      if (!['PLAYING', 'LISTENING'].includes(game.type)) return
 
       if (
         typeof db.data.userDB[gMember.user.id].games[game.name] == 'undefined'
