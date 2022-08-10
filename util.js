@@ -280,11 +280,11 @@ const userStatuses = (gMember) => {
     })
   }
 
-  db.data.userDB[gMember.user.id].status.total =
-    db.data.userDB[gMember.user.id].status.online +
-    db.data.userDB[gMember.user.id].status.idle +
-    db.data.userDB[gMember.user.id].status.dnd
-    
+  db.data.userDB[gMember.user.id].statuses.total =
+    db.data.userDB[gMember.user.id].statuses.online +
+    db.data.userDB[gMember.user.id].statuses.idle +
+    db.data.userDB[gMember.user.id].statuses.dnd
+
   db.data.userDB[gMember.user.id].last = now
   db.data.userDB[gMember.user.id].status = status
 
