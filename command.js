@@ -138,6 +138,7 @@ class Slash {
           '\u200b'
         )
         embed.addField('Error', '```' + error + '```')
+        console.log(error)
 
         try {
           await interaction.reply({

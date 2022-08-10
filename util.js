@@ -1,5 +1,6 @@
 import fs from 'fs'
 import db from './db.js'
+import log from './logger.js'
 
 const defaultAct = {
   status: 'online',
@@ -226,7 +227,64 @@ const mineSweeper = (size, bombs) => {
   return out
 }
 
+const userStatuses = (gMember) => {
+  db.read()
+  const now = Date.now()
 
+  const status = gMember.presence?.status || 'offline'
+
+  if (typeof db.data.userDB[gMember.user.id] == 'undefined') {
+    db.data.userDB[gMember.user.id] = {
+      id: gMember.user.id,
+      status: status,
+      last: now,
+      statuses: {
+        online: 0,
+        idle: 0,
+        dnd: 0,
+        offline: 0,
+      },
+      games: {},
+    }
+  }
+
+  const oldStatus = db.data.userDB[gMember.user.id].status
+
+  db.data.userDB[gMember.user.id].username = gMember.user.username
+
+  if (oldStatus != status) {
+    log.info(
+      `${gMember.user.username} changed status from ${oldStatus} to ${status}`
+    )
+  }
+
+  if (['online', 'idle', 'dnd', 'offline'].includes(oldStatus)) {
+    db.data.userDB[gMember.user.id].statuses[oldStatus] +=
+      now - db.data.userDB[gMember.user.id].last
+  } else {
+    console.log('invalid status')
+  }
+
+  if (gMember.presence?.activities.length > 0) {
+    const games = gMember.presence.activities
+    games.forEach((game) => {
+      if (['PLAYING', 'LISTENING'].includes(game.type)) return
+
+      if (
+        typeof db.data.userDB[gMember.user.id].games[game.name] == 'undefined'
+      ) {
+        db.data.userDB[gMember.user.id].games[game.name] = 0
+      }
+      db.data.userDB[gMember.user.id].games[game.name] +=
+        now - db.data.userDB[gMember.user.id].last
+    })
+  }
+
+  db.data.userDB[gMember.user.id].last = now
+  db.data.userDB[gMember.user.id].status = status
+
+  db.write()
+}
 
 export default {
   defaultAct,
@@ -235,5 +293,5 @@ export default {
   serverInfo,
   sanitizer,
   mineSweeper,
-  
+  userStatuses,
 }
