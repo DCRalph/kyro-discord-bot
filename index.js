@@ -1,5 +1,5 @@
 import Discord from 'discord.js'
-import settings from './config.js'
+import config from './config.js'
 import util from './util.js'
 import command from './command.js'
 // import commands from './commands.js'
@@ -28,11 +28,15 @@ client.on('ready', async () => {
 
   log.info('Loading commands...')
 
+  config.servers.forEach(async (s) => {
+    await client.guilds.fetch(s)
+  })
+
   let files = fs.readdirSync('./commands')
   for (let file of files) {
     if (file.endsWith('.js')) {
       let cmd = await import(`./commands/${file}`)
-      cmd.create(client)
+      await cmd.create(client)
     }
   }
 
@@ -106,4 +110,4 @@ client.on('presenceUpdate', async (oldMember, newMember) => {
   util.userStatuses(m)
 })
 
-client.login(settings.kyro)
+client.login(config.kyro)

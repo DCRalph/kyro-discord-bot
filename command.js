@@ -2,6 +2,7 @@ import Discord from 'discord.js'
 import db from './db.js'
 import util from './util.js'
 import log from './logger.js'
+import config from './config.js'
 
 let all = []
 let commands = []
@@ -97,17 +98,20 @@ class Slash {
     if (!exclude) slashs.push(this)
     if (!exclude) all.push(this)
 
-    let data = {
-      name: this.aliases[0].toLowerCase(),
+    const data = {
+      name: this.name.toLowerCase(),
       description: description,
       options: options,
     }
 
-    client.guilds.cache.get('689384013047005199')?.commands.create(data)
-    client.guilds.cache.get('877375997870239785')?.commands.create(data)
+    // client.guilds.cache.get('689384013047005199')?.commands.create(data)
+    // client.guilds.cache.get('877375997870239785')?.commands.create(data)
 
-    // let commandManager = client.application?.commands
-    // commandManager.create(data)
+    config.servers.forEach(async (s) => {
+      const g = client.guilds.cache.get(s)
+      // console.log(g.commands.fetch())
+      g?.commands.create(data)
+    })
 
     db.read()
     if (typeof db.data.commandLog[this.name] === 'undefined') {
