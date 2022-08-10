@@ -116,15 +116,11 @@ const create = (client) => {
 
         db.read()
 
-        const sorted = Object.values(db.data.userDB).map((u) => {
-          u.status.total = u.status.online + u.status.idle + u.status.dnd
-          return u
-        }).sort((a, b) => {
-          let A = a.statuses.online + a.statuses.idle + a.statuses.dnd
-          let B = b.statuses.online + b.statuses.idle + b.statuses.dnd
+        const sorted = Object.values(db.data.userDB).sort((a, b) => {
+          let A = a.statuses.total
+          let B = b.statuses.total
           return B - A
         })
-
 
         let embed = new Discord.MessageEmbed()
         embed.setTitle('Status Rank')
@@ -141,7 +137,7 @@ const create = (client) => {
         sorted.forEach((u, i) => {
           rank += `${i + 1}\n`
           usernames += `${u.username}\n`
-          time += `${pms(u.statuses.online)}\n`
+          time += `${pms(u.statuses.total)}\n`
         })
         embed.addField('Rank:', rank, true)
         embed.addField('Username:', usernames, true)
