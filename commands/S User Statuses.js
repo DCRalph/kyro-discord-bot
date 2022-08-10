@@ -116,13 +116,15 @@ const create = (client) => {
 
         db.read()
 
-        const users2 = Object.values(db.data.userDB)
-
-        const sorted = users2.sort((a, b) => {
+        const sorted = Object.values(db.data.userDB).map((u) => {
+          u.status.total = u.status.online + u.status.idle + u.status.dnd
+          return u
+        }).sort((a, b) => {
           let A = a.statuses.online + a.statuses.idle + a.statuses.dnd
           let B = b.statuses.online + b.statuses.idle + b.statuses.dnd
           return B - A
         })
+
 
         let embed = new Discord.MessageEmbed()
         embed.setTitle('Status Rank')
