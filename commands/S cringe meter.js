@@ -56,7 +56,6 @@ const create = (client) => {
 
         const { cringe, chad, texts } = util.calcCringe(userDB.games)
 
-        console.log(cringe, chad, texts)
 
         const embed = new Discord.MessageEmbed()
         embed.setTitle(`${u.user.username}'s cringe meter`)
@@ -82,7 +81,6 @@ const create = (client) => {
 
         users1.forEach((u) => {
           const m2 = m.get(u.id)
-          console.log(m2.user.username)
           util.userStatuses(m2)
         })
 

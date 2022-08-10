@@ -298,7 +298,6 @@ const calcCringe = (games) => {
 
   const has = (obj, word) => {
     return Object.keys(obj).some((key) => {
-      console.log(key, word, key.toLowerCase().includes(word.toLowerCase()))
       return key.toLowerCase().includes(word.toLowerCase())
     })
   }
@@ -307,7 +306,6 @@ const calcCringe = (games) => {
     texts.push({ game, text })
   }
 
-  console.log(has(games, 'minecraft'))
 
   const times = {
     hour: 3600000,

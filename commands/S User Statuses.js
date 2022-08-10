@@ -110,7 +110,6 @@ const create = (client) => {
 
         users.forEach((u) => {
           const m2 = m.get(u.id)
-          console.log(m2.user.username)
           util.userStatuses(m2)
         })
 
