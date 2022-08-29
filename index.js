@@ -73,6 +73,18 @@ client.on('messageCreate', async (message) => {
 
     message.channel.send(res)
   }
+
+  if (Math.floor(Math.random() * 100) == 1) {
+    const imgs = [
+      'https://i.kym-cdn.com/photos/images/original/000/642/238/cca.gif',
+      'https://media.makeameme.org/created/get-cancer-faggot.jpg',
+      'https://memegenerator.net/img/instances/51482093.jpg',
+    ]
+
+    const res = imgs[Math.floor(Math.random() * imgs.length)]
+
+    message.channel.send(res)
+  }
 })
 
 client.on('interactionCreate', (interaction) => {

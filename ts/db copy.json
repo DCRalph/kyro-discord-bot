@@ -1,0 +1,495 @@
+{
+  "commandLog": {
+    "ping": 127,
+    "bread": 251,
+    "hmmm": 45,
+    "frog": 12,
+    "amogus": 3,
+    "sus": 11,
+    "david is sexy asian": 6,
+    "covid": 153,
+    "help": 164,
+    "sexy adam": 20,
+    "possum": 5,
+    "yeet": 99,
+    "shrek": 1,
+    "sexy shrek": 1,
+    "adams-command": 24,
+    "fuck": 89,
+    "minesweeper": 46,
+    "status": 11,
+    "requis": 1,
+    "brandon": 0,
+    "brandon?": 0,
+    "brandon =": 9,
+    "yeeet": 0,
+    "test": 13,
+    "role-rank": 20,
+    "": 0,
+    "user": 0,
+    "userStatus": 0,
+    "status-rank": 10,
+    "user-status": 130,
+    "user-status-old": 0,
+    "cringe-meter": 31,
+    "unused": 4
+  },
+  "fuckTemplate": {
+    "1": [
+      "[x] is a fucking idiot"
+    ],
+    "2": [
+      "[x] fucked [y]",
+      "[x] The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. (hyonk) A single lap should be completed each time you hear this sound. (hyonk) Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start. [y]"
+    ],
+    "3": [
+      "[x] fucked [y] and [z]"
+    ],
+    "4": [
+      "[x] fucked [y], [z] and [a]"
+    ],
+    "5": [
+      "[x] fucked [y], [z], [a] and [b]"
+    ],
+    "6": [
+      "[x] fucked [y], [z], [a], [b] and [c]",
+      "[x] an ace bc he fucked [y], [z], [a], [b] and [c]"
+    ]
+  },
+  "userDB": {
+    "472872051359612945": {
+      "id": "472872051359612945",
+      "status": "online",
+      "last": 1660131282414,
+      "statuses": {
+        "online": 30977318,
+        "idle": 24406,
+        "dnd": 5066,
+        "offline": 4628,
+        "total": 31006790
+      },
+      "games": {
+        "Minecraft": 259200000099,
+        "Overwatch": 10000
+      },
+      "username": "DCRalph"
+    },
+    "414518793314893826": {
+      "id": "414518793314893826",
+      "status": "offline",
+      "last": 1660130144457,
+      "statuses": {
+        "online": 17505955,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 12360880,
+        "total": 17505955
+      },
+      "games": {},
+      "username": "cheeseygreasey"
+    },
+    "557413703029358593": {
+      "id": "557413703029358593",
+      "status": "online",
+      "last": 1660130276883,
+      "statuses": {
+        "online": 17927242,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 12000647,
+        "total": 17927242
+      },
+      "games": {},
+      "username": "Racingcar462"
+    },
+    "317580359766114305": {
+      "id": "317580359766114305",
+      "last": 1660130144460,
+      "statuses": {
+        "online": 0,
+        "idle": 9619087,
+        "dnd": 0,
+        "offline": 19837307,
+        "total": 9619087
+      },
+      "games": {},
+      "username": "yoshisthinking",
+      "status": "offline"
+    },
+    "348286039841832961": {
+      "id": "348286039841832961",
+      "status": "offline",
+      "last": 1660130144461,
+      "statuses": {
+        "online": 16680921,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 12750498,
+        "total": 16680921
+      },
+      "games": {
+        "Custom Status": 195733
+      },
+      "username": "Konscrumpskin"
+    },
+    "699460552128331828": {
+      "id": "699460552128331828",
+      "status": "online",
+      "last": 1660130144462,
+      "statuses": {
+        "online": 53025,
+        "idle": 2627363,
+        "dnd": 0,
+        "offline": 26586605,
+        "total": 2680388
+      },
+      "games": {},
+      "username": "_Shawn_"
+    },
+    "946324236513968149": {
+      "id": "946324236513968149",
+      "status": "offline",
+      "last": 1660130144463,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 29241081,
+        "total": 0
+      },
+      "games": {},
+      "username": "Sett S Tier Player"
+    },
+    "199720700393553921": {
+      "id": "199720700393553921",
+      "status": "offline",
+      "last": 1660130144464,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 12171505,
+        "offline": 17052741,
+        "total": 12171505
+      },
+      "games": {
+        "Custom Status": 31642,
+        "Counter-Strike: Global Offensive": 3586253
+      },
+      "username": "Kiri"
+    },
+    "526109896983445515": {
+      "id": "526109896983445515",
+      "status": "offline",
+      "last": 1660130144465,
+      "statuses": {
+        "online": 20519445,
+        "idle": 6078,
+        "dnd": 0,
+        "offline": 8434938,
+        "total": 20525523
+      },
+      "games": {
+        "Spotify": 56279,
+        "McOsu": 16053889,
+        "osu!": 159426
+      },
+      "username": "ytstormmv"
+    },
+    "303335038748196876": {
+      "id": "303335038748196876",
+      "status": "idle",
+      "last": 1660130144467,
+      "statuses": {
+        "online": 0,
+        "idle": 28829067,
+        "dnd": 0,
+        "offline": 6464,
+        "total": 28829067
+      },
+      "games": {},
+      "username": "Dethpathito"
+    },
+    "468692902508363777": {
+      "id": "468692902508363777",
+      "status": "online",
+      "last": 1660130144468,
+      "statuses": {
+        "online": 2850733,
+        "idle": 10019092,
+        "dnd": 0,
+        "offline": 0,
+        "total": 12869825
+      },
+      "games": {},
+      "username": "deeznuts"
+    },
+    "407831738883244032": {
+      "id": "407831738883244032",
+      "status": "dnd",
+      "last": 1660130954676,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 13667427,
+        "offline": 0,
+        "total": 13667427
+      },
+      "games": {
+        "VALORANT": 826830,
+        "Spotify": 8823570
+      },
+      "username": "Imagine Wagon"
+    },
+    "425181841486643206": {
+      "id": "425181841486643206",
+      "status": "offline",
+      "last": 1660130144471,
+      "statuses": {
+        "online": 12669956,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 53023,
+        "total": 12669956
+      },
+      "games": {
+        "Spotify": 265403,
+        "Call of Duty: Black Ops Cold War": 4451695,
+        "Call of Duty®: Black Ops Cold War": 4451695
+      },
+      "username": "I'm_That_Guy"
+    },
+    "461811794541805569": {
+      "id": "461811794541805569",
+      "status": "online",
+      "last": 1660131455192,
+      "statuses": {
+        "online": 10673311,
+        "idle": 3194941,
+        "dnd": 0,
+        "offline": 0,
+        "total": 13868252
+      },
+      "games": {},
+      "username": "liam"
+    },
+    "624324290644279370": {
+      "id": "624324290644279370",
+      "status": "idle",
+      "last": 1660130144473,
+      "statuses": {
+        "online": 6518664,
+        "idle": 53022,
+        "dnd": 0,
+        "offline": 5923806,
+        "total": 6571686
+      },
+      "games": {
+        "Spotify": 83176
+      },
+      "username": "Frank Ntilikina"
+    },
+    "464687209836969984": {
+      "id": "464687209836969984",
+      "status": "offline",
+      "last": 1660130248408,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 8577352,
+        "offline": 3971971,
+        "total": 8577352
+      },
+      "games": {},
+      "username": "Planky"
+    },
+    "336041460065370112": {
+      "id": "336041460065370112",
+      "status": "offline",
+      "last": 1660130144476,
+      "statuses": {
+        "online": 9347962,
+        "idle": 94444,
+        "dnd": 0,
+        "offline": 2911510,
+        "total": 9442406
+      },
+      "games": {},
+      "username": "VodkaCruisersGiveMeHeadAches"
+    },
+    "318617312318193675": {
+      "id": "318617312318193675",
+      "status": "offline",
+      "last": 1660130144478,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 1172114,
+        "offline": 11177733,
+        "total": 1172114
+      },
+      "games": {},
+      "username": "Ben_Zed"
+    },
+    "452399671118397443": {
+      "id": "452399671118397443",
+      "status": "offline",
+      "last": 1660130144479,
+      "statuses": {
+        "online": 8901652,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 2779395,
+        "total": 8901652
+      },
+      "games": {},
+      "username": "Knightrider009"
+    },
+    "221539698638716929": {
+      "id": "221539698638716929",
+      "status": "offline",
+      "last": 1660130231901,
+      "statuses": {
+        "online": 0,
+        "idle": 5192,
+        "dnd": 0,
+        "offline": 9849344,
+        "total": 5192
+      },
+      "games": {},
+      "username": "Gorish"
+    },
+    "333733637570691072": {
+      "id": "333733637570691072",
+      "status": "offline",
+      "last": 1660130144481,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 9722798,
+        "total": 0
+      },
+      "games": {},
+      "username": "51xert"
+    },
+    "391640729765675010": {
+      "id": "391640729765675010",
+      "status": "dnd",
+      "last": 1660130587875,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 10130113,
+        "offline": 0,
+        "total": 10130113
+      },
+      "games": {
+        "Spotify": 7455723,
+        "Bloons TD 6": 7107168
+      },
+      "username": "Infinite_Arrow"
+    },
+    "147783990302998528": {
+      "id": "147783990302998528",
+      "status": "dnd",
+      "last": 1660130144484,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 9466583,
+        "offline": 0,
+        "total": 9466583
+      },
+      "games": {},
+      "username": "Crafty"
+    },
+    "332766922540318720": {
+      "id": "332766922540318720",
+      "status": "offline",
+      "last": 1660130144485,
+      "statuses": {
+        "online": 0,
+        "idle": 407890,
+        "dnd": 0,
+        "offline": 8893002,
+        "total": 407890
+      },
+      "games": {},
+      "username": "Aces"
+    },
+    "404781057838284811": {
+      "id": "404781057838284811",
+      "status": "offline",
+      "last": 1660130144487,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 8293468,
+        "total": 0
+      },
+      "games": {},
+      "username": "Styzn"
+    },
+    "478856234905108480": {
+      "id": "478856234905108480",
+      "status": "online",
+      "last": 1660130144488,
+      "statuses": {
+        "online": 8268182,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 0,
+        "total": 8268182
+      },
+      "games": {
+        "Apex Legends": 4310625
+      },
+      "username": "ImmortalLing"
+    },
+    "512713019495677972": {
+      "id": "512713019495677972",
+      "status": "online",
+      "last": 1660130144489,
+      "statuses": {
+        "online": 4046862,
+        "idle": 11969,
+        "dnd": 0,
+        "offline": 0,
+        "total": 4058831
+      },
+      "games": {},
+      "username": "crafty.exe"
+    },
+    "504094126468235265": {
+      "id": "504094126468235265",
+      "status": "dnd",
+      "last": 1660130144491,
+      "statuses": {
+        "online": 0,
+        "idle": 0,
+        "dnd": 2734505,
+        "offline": 1236451,
+        "total": 2734505
+      },
+      "games": {},
+      "username": "Tugi Fox"
+    },
+    "412494383368372227": {
+      "id": "412494383368372227",
+      "status": "online",
+      "last": 1660130144492,
+      "statuses": {
+        "online": 3635003,
+        "idle": 0,
+        "dnd": 0,
+        "offline": 0,
+        "total": 3635003
+      },
+      "games": {
+        "League of Legends": 3492389
+      },
+      "username": "Rakuyo"
+    }
+  }
+}
