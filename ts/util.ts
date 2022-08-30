@@ -3,17 +3,17 @@ import db from './db.js'
 import log from './logger.js'
 import Discord from 'discord.js'
 
-interface Act {
-  name: string
-  type: string
-}
+// interface Act {
+//   name: string
+//   type: string
+// }
 
-interface defaultAct {
-  status: string
-  activities: Act[]
-}
+// interface defaultAct {
+//   status: string
+//   activities: Act[]
+// }
 
-const defaultAct = {
+const defaultAct: Discord.PresenceData = {
   status: 'online',
   activities: [
     {
@@ -63,7 +63,7 @@ class Timer {
   }
 }
 
-const hslToHex = (h: number, s: number, l: number) => {
+const hslToHex = (h: number, s: number, l: number): Discord.ColorResolvable => {
   l /= 100
   const a = (s * Math.min(l, 1 - l)) / 100
   const f = (n: number) => {
@@ -210,6 +210,8 @@ const mineSweeper = (size: number[], bombs: number) => {
 
 const userStatuses = (gMember: Discord.GuildMember) => {
   db.read()
+  if (db.data == null) return
+
   const now = Date.now()
 
   const status = gMember.presence?.status || 'offline'
@@ -218,12 +220,14 @@ const userStatuses = (gMember: Discord.GuildMember) => {
     db.data.userDB[gMember.user.id] = {
       id: gMember.user.id,
       status: status,
+      username: gMember.user.username,
       last: now,
       statuses: {
         online: 0,
         idle: 0,
         dnd: 0,
         offline: 0,
+        total: 0,
       },
       games: {},
     }

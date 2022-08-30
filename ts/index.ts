@@ -46,6 +46,8 @@ client.on('ready', async () => {
   log.info('Loaded Done!')
 
   db.read()
+  if(db.data == null) return
+
   for (const key in db.data.commandLog) {
     if (db.data.commandLog[key]) {
       if (!command.all.find((c) => c.name == key)) {
@@ -104,8 +106,12 @@ client.on('presenceUpdate', async (oldMember, newMember) => {
   // log.log('old', oldMember)
   // log.log('new', newMember)
 
+  if(newMember.user == null) return
+  if(newMember.guild == null) return
+
+
   if (newMember.user.bot) return
-  if (newMember.guild.id != 689384013047005199) return
+  if (newMember.guild.id != '689384013047005199') return
 
   const g = await client.guilds.fetch(newMember.guild.id)
   const m = await g.members.fetch(newMember.user.id)
