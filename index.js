@@ -7,12 +7,15 @@ import fs from 'fs'
 import db from './db.js'
 import log from './logger.js'
 
+// const ffmpeg = require("ffmpeg");
+
 const client = new Discord.Client({
   intents: [
     Discord.Intents.FLAGS.GUILDS,
     Discord.Intents.FLAGS.GUILD_MEMBERS,
     Discord.Intents.FLAGS.GUILD_PRESENCES,
     Discord.Intents.FLAGS.GUILD_MESSAGES,
+    Discord.Intents.FLAGS.GUILD_VOICE_STATES,
     // Discord.Intents.FLAGS.DIRECT_MESSAGES,
   ],
 })
@@ -83,6 +86,47 @@ client.on('messageCreate', async (message) => {
     const res = imgs[Math.floor(Math.random() * imgs.length)]
 
     message.channel.send(res)
+  }
+
+  if (message.author.id == '472872051359612945' && message.content == 'ppp') {
+  }
+
+  if (message.author.id == '472872051359612945' && message.content == 'pp') {
+    const m = message.member
+
+    if (!m.voice.channel) {
+      message.reply({ content: `${m.displayName} isn't in vc` })
+      return
+    }
+
+    const vc = m.voice.channel
+
+    vc.members.forEach((mm) => {
+      console.log(1, mm.user.id)
+    })
+
+    return
+
+    connection = DiscordVoice.joinVoiceChannel({
+      channelId: vc.id,
+      guildId: vc.guild.id,
+      adapterCreator: vc.guild.voiceAdapterCreator,
+    })
+
+    sub = connection.subscribe(Player)
+
+    const resource = DiscordVoice.createAudioResource(
+      fs.createReadStream('./outro-t.wav'),
+      {
+        inputType: DiscordVoice.StreamType.Arbitrary,
+      }
+    )
+
+    Player.play(resource)
+
+    message.reply({
+      content: 'playing',
+    })
   }
 })
 
