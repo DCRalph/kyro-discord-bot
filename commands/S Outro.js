@@ -93,8 +93,6 @@ const create = (client) => {
         timer2.stop()
       }, 11000)
 
-      console.log(vc.members)
-
       interaction.reply({
         content: 'playing',
       })
