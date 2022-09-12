@@ -26,8 +26,8 @@ const create = (client) => {
         type: 'INTEGER',
         description: 'Volume of outro',
         required: false,
-        maxValue: 100,
-        minValue: 10
+        maxValue: 11,
+        minValue: 1
       },
     ],
     async (interaction, client) => {
@@ -38,8 +38,9 @@ const create = (client) => {
 
       const volume = interaction.options.get('volume')
 
-      const v = volume?.value || 50 
-
+      const v = (volume?.value || 10) / 10
+      if(v == 1.1) v = 2;
+      
       const m = interaction.member
 
       if (!m.voice.channel) {
@@ -65,7 +66,7 @@ const create = (client) => {
         }
       )
 
-      resource.volume.setVolume(1)
+      resource.volume.setVolume(v)
 
       Player.play(resource)
 
