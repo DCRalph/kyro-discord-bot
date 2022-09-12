@@ -110,7 +110,7 @@ const create = (client) => {
 
         users.forEach((u) => {
           const m2 = m.get(u.id)
-          util.userStatuses(m2)
+          if(m2) util.userStatuses(m2)
         })
 
         db.read()
