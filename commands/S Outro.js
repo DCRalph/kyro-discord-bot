@@ -93,34 +93,44 @@ const create = (client) => {
         timer2.stop()
       }, 11000)
 
+      const Row = new Discord.MessageActionRow()
+
+      const Button1 = new Discord.MessageButton()
+      Button1.setCustomId('stop-outro')
+      Button1.setLabel('Stop outro')
+      Button1.setStyle('DANGER')
+
+      Row.setComponents(Button1)
+
+      client.on('interactionCreate', (interaction2) => {
+        if (!interaction2.isButton()) return
+        if (interaction2.customId == 'stop-outro') {
+          if (connection != null) {
+            sub.unsubscribe()
+            connection.destroy()
+            connection = null
+          }
+
+          Player.stop()
+
+          timer1.stop()
+          timer2.stop()
+
+          running = false
+
+          interaction2.reply({ content: 'Stopped' })
+          interaction.deleteReply()
+        }
+      })
+
       interaction.reply({
         content: 'playing',
+        components: [Row],
       })
       running = true
     }
   )
 
-  new command.Slash(
-    client,
-    ['stop-outro'],
-    'pussy out',
-    [],
-    async (interaction, client) => {
-      if (connection != null) {
-        sub.unsubscribe()
-        connection.destroy()
-        connection = null
-      }
-
-      Player.stop()
-
-      timer1.stop()
-      timer2.stop()
-
-      running = false
-
-      interaction.reply({ content: 'stoped' })
-    }
-  )
+ 
 }
 export { create }
