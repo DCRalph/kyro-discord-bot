@@ -93,7 +93,7 @@ client.on('messageCreate', async (message) => {
     const m = await g.members.fetch(message.member.id)
 
     let role = g.roles.cache.find((x) => x.name == 'chad')
-    console.log(role)
+
     if (typeof role == 'undefined') {
       role = await g.roles.create({
         name: 'chad',
