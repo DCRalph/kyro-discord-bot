@@ -20,12 +20,25 @@ const create = (client) => {
     client,
     ['outro'],
     'leave in style',
-    [],
+    [
+      {
+        name: 'volume',
+        type: 'INTEGER',
+        description: 'Volume of outro',
+        required: false,
+        maxValue: 100,
+        minValue: 10
+      },
+    ],
     async (interaction, client) => {
       if (running) {
         interaction.reply({ content: `in use` })
         return
       }
+
+      const volume = interaction.options.get('volume')
+
+      const v = volume?.value || 50 
 
       const m = interaction.member
 
@@ -48,8 +61,11 @@ const create = (client) => {
         fs.createReadStream('./outro-t.wav'),
         {
           inputType: DiscordVoice.StreamType.Arbitrary,
+          inlineVolume: true
         }
       )
+
+      resource.volume.setVolume(1)
 
       Player.play(resource)
 
