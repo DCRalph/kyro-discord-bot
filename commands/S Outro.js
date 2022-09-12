@@ -38,7 +38,7 @@ const create = (client) => {
 
       const volume = interaction.options.get('volume')
 
-      let v = (volume?.value || 10) / 10
+      let v = (volume?.value || 3) / 10
       if(v == 1.1) v = 10;
       
       const m = interaction.member
