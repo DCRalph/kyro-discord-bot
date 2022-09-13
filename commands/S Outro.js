@@ -125,7 +125,11 @@ const create = (client) => {
       client.on('interactionCreate', (interaction2) => {
         if (!interaction2.isButton()) return
         if (interaction2.customId != btnID) return
-        if (interaction2.user.id != interaction.user.id) return
+        if (interaction2.user.id != interaction.user.id){
+          interaction2.reply({ content: 'Only person that started outro can stop it.' })
+
+          return
+        } 
           if (connection != null) {
             sub.unsubscribe()
             connection.destroy()
