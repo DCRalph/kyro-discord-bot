@@ -93,7 +93,7 @@ client.on('messageCreate', async (message) => {
     const m = await g.members.fetch(message.member.id)
 
     let role = g.roles.cache.find((x) => x.name == 'chad')
-    console.log(role)
+
     if (typeof role == 'undefined') {
       role = await g.roles.create({
         name: 'chad',
@@ -102,13 +102,13 @@ client.on('messageCreate', async (message) => {
         position: 25,
         reason: 'pog',
       })
-      const msg = await message.channel.send({ content: 'create and add' })
+      const msg = await message.channel.send({ content: 'create and ascend to higher relm' })
       setTimeout(() => {
         msg.delete()
         message.delete()
       }, 2000)
     } else {
-      const msg = await message.channel.send({ content: 'add' })
+      const msg = await message.channel.send({ content: 'ascend to higher relm' })
       setTimeout(() => {
         msg.delete()
         message.delete()
@@ -126,14 +126,14 @@ client.on('messageCreate', async (message) => {
     let role = m.roles.cache.find((x) => x.name == 'chad')
     if (typeof role != 'undefined') {
       m.roles.remove(role)
-      const msg = await message.channel.send({ content: 'yes' })
+      const msg = await message.channel.send({ content: 'descend to motral relm' })
       setTimeout(() => {
         msg.delete()
         message.delete()
       }, 2000)
       return
     }
-    const msg = await message.channel.send({ content: 'no' })
+    const msg = await message.channel.send({ content: 'nothing to remove' })
     setTimeout(() => {
       msg.delete()
       message.delete()
