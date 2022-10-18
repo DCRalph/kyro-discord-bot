@@ -57,6 +57,34 @@ client.on('ready', async () => {
       }
     }
   }
+
+  if (1 == 1) {
+    // disabled
+    const guild = await client.guilds.fetch('689384013047005199')
+    const colors = [
+      '#ff0000',
+      '#ffff00',
+      '#00ff00',
+      '#00ffff',
+      '#0000ff',
+      '#ff00ff',
+    ]
+    const role = await guild.roles.fetch('1024196614518210620')
+
+    let pos = 0
+
+    setInterval(async () => {
+      // const size = guild.roles.cache.get(role.id).members.size
+
+      role.edit({
+        color: colors[pos],
+      })
+
+      pos += 1
+      if (pos >= colors.length) pos = 0
+      // console.log('Rainbow Color changed, it is now: ' + colors[pos])
+    }, 2000)
+  }
 })
 
 // log.log(command.commands)
@@ -77,10 +105,13 @@ client.on('messageCreate', async (message) => {
     message.channel.send(res)
   }
 
-  if (Math.floor(Math.random() * 100) == 1) {
+  if (Math.floor(Math.random() * 1000) == 1) {
     const imgs = [
       'https://i.kym-cdn.com/photos/images/original/000/642/238/cca.gif',
-      'https://memegenerator.net/img/instances/51482093.jpg',
+      'https://cdn.discordapp.com/attachments/1018800651070865439/1032033180712185966/unknown.png',
+      'https://cdn.discordapp.com/attachments/688142239817662502/900529806372921385/monkey_balls.png',
+      'https://cdn.discordapp.com/attachments/688142239817662502/881739512215126046/Screenshot_2021-07-09-16-08-34-23.jpg',
+      'https://youtu.be/H1rN-gdkgfU'
     ]
 
     const res = imgs[Math.floor(Math.random() * imgs.length)]
@@ -102,13 +133,17 @@ client.on('messageCreate', async (message) => {
         position: 25,
         reason: 'pog',
       })
-      const msg = await message.channel.send({ content: 'create and ascend to higher relm' })
+      const msg = await message.channel.send({
+        content: 'create and ascend to higher relm',
+      })
       setTimeout(() => {
         msg.delete()
         message.delete()
       }, 2000)
     } else {
-      const msg = await message.channel.send({ content: 'ascend to higher relm' })
+      const msg = await message.channel.send({
+        content: 'ascend to higher relm',
+      })
       setTimeout(() => {
         msg.delete()
         message.delete()
@@ -116,7 +151,6 @@ client.on('messageCreate', async (message) => {
     }
 
     m.roles.add(role)
-    
   }
 
   if (message.author.id == '472872051359612945' && message.content == 'dsc') {
@@ -126,7 +160,9 @@ client.on('messageCreate', async (message) => {
     let role = m.roles.cache.find((x) => x.name == 'chad')
     if (typeof role != 'undefined') {
       m.roles.remove(role)
-      const msg = await message.channel.send({ content: 'descend to motral relm' })
+      const msg = await message.channel.send({
+        content: 'descend to motral relm',
+      })
       setTimeout(() => {
         msg.delete()
         message.delete()
