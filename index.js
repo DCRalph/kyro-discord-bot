@@ -58,7 +58,7 @@ client.on('ready', async () => {
     }
   }
 
-  if (1 == 1) {
+  if (1 == 2) {
     // disabled
     const guild = await client.guilds.fetch('689384013047005199')
     const colors = [
@@ -112,7 +112,7 @@ client.on('messageCreate', async (message) => {
       'https://cdn.discordapp.com/attachments/688142239817662502/900529806372921385/monkey_balls.png',
       'https://cdn.discordapp.com/attachments/688142239817662502/881739512215126046/Screenshot_2021-07-09-16-08-34-23.jpg',
       'https://youtu.be/H1rN-gdkgfU',
-      'https://cdn.discordapp.com/attachments/1018800651070865439/1032034183121477662/unknown.png'
+      'https://cdn.discordapp.com/attachments/1018800651070865439/1032034183121477662/unknown.png',
     ]
 
     const res = imgs[Math.floor(Math.random() * imgs.length)]
@@ -202,7 +202,6 @@ client.on('interactionCreate', (interaction) => {
       }
     }
   }
-
 })
 
 client.on('presenceUpdate', async (oldMember, newMember) => {
