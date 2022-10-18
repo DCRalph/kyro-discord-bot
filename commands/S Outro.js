@@ -5,6 +5,7 @@ import fs from 'fs'
 
 import * as DiscordVoice from '@discordjs/voice'
 import ffmpeg from 'ffmpeg'
+import {nanoid} from 'nanoid'
 
 let running = false
 
@@ -112,8 +113,10 @@ const create = (client) => {
 
       const Row = new Discord.MessageActionRow()
 
+      const btnID = nanoid()
+
       const Button1 = new Discord.MessageButton()
-      Button1.setCustomId('stop-outro')
+      Button1.setCustomId(btnID)
       Button1.setLabel('Stop outro')
       Button1.setStyle('DANGER')
 
@@ -121,7 +124,12 @@ const create = (client) => {
 
       client.on('interactionCreate', (interaction2) => {
         if (!interaction2.isButton()) return
-        if (interaction2.customId == 'stop-outro') {
+        if (interaction2.customId != btnID) return
+        if (interaction2.user.id != interaction.user.id){
+          interaction2.reply({ content: 'Only person that started outro can stop it.' })
+
+          return
+        } 
           if (connection != null) {
             sub.unsubscribe()
             connection.destroy()
@@ -136,8 +144,7 @@ const create = (client) => {
           running = false
 
           interaction2.reply({ content: 'Stopped' })
-          interaction.deleteReply()
-        }
+        
       })
 
       interaction.reply({

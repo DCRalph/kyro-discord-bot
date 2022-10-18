@@ -201,9 +201,7 @@ client.on('interactionCreate', (interaction) => {
       }
     }
   }
-  if (interaction.isButton()) {
-    log.log(interaction)
-  }
+
 })
 
 client.on('presenceUpdate', async (oldMember, newMember) => {
