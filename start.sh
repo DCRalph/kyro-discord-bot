@@ -1,1 +1,2 @@
-nodemon index.js -i '*/*.json'
+# nodemon index.js -i '*/*.json'
+node index.js
