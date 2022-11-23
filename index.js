@@ -92,6 +92,8 @@ client.on('ready', async () => {
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return
 
+  if (message.author.id == '557413703029358593') return
+
   if (enable) command.runAllText(message, client)
 
   if (message.author.id == '557413703029358593') {
@@ -120,7 +122,7 @@ client.on('messageCreate', async (message) => {
     message.channel.send(res)
   }
 
-  if (message.author.id == '472872051359612945' && message.content == 'asc') {
+  if (config.chads.includes(message.author.id)  && message.content == 'asc') {
     const g = await client.guilds.fetch(message.guild.id)
     const m = await g.members.fetch(message.member.id)
 
@@ -154,7 +156,7 @@ client.on('messageCreate', async (message) => {
     m.roles.add(role)
   }
 
-  if (message.author.id == '472872051359612945' && message.content == 'dsc') {
+  if (config.chads.includes(message.author.id) && message.content == 'dsc') {
     const g = await client.guilds.fetch(message.guild.id)
     const m = await g.members.fetch(message.member.id)
 
@@ -177,7 +179,7 @@ client.on('messageCreate', async (message) => {
     }, 2000)
   }
 
-  if (message.author.id == '472872051359612945' && message.content == 'role') {
+  if (message.author.id == config.me && message.content == 'role') {
     const g = await client.guilds.fetch(message.guild.id)
     const m = await g.members.fetch(message.member.id)
 
@@ -188,6 +190,8 @@ client.on('messageCreate', async (message) => {
 client.on('interactionCreate', (interaction) => {
   if (interaction.isCommand()) {
     if (enable) {
+      if (interaction.author.id == '557413703029358593') return
+
       let res = command.runAllSlash(interaction, client)
       if (!res) {
         let embed = new Discord.MessageEmbed()
