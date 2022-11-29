@@ -52,7 +52,7 @@ const create = (client) => {
       })
 
       command.slashs.forEach((c) => {
-        c.create(c.data)
+        c.create(c.data, client)
       })
 
       const embed = new Discord.MessageEmbed()
