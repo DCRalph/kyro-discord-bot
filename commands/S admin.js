@@ -43,8 +43,16 @@ const create = (client) => {
 
       const unused = cmds.filter((c) => !loadedCommands.includes(c.name))
 
-      unused.forEach((c) => {
+      // unused.forEach((c) => {
+      //   g.commands.delete(c)
+      // })
+
+      cmds.forEach((c) => {
         g.commands.delete(c)
+      })
+
+      command.slashs.forEach((c) => {
+        c.create(c.data)
       })
 
       const embed = new Discord.MessageEmbed()

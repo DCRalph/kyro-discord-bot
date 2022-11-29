@@ -107,11 +107,7 @@ class Slash {
     // client.guilds.cache.get('689384013047005199')?.commands.create(data)
     // client.guilds.cache.get('877375997870239785')?.commands.create(data)
 
-    config.servers.forEach(async (s) => {
-      const g = client.guilds.cache.get(s)
-      // console.log(g.commands.fetch())
-      g?.commands.create(data)
-    })
+    this.create(data)
 
     db.read()
     if (typeof db.data.commandLog[this.name] === 'undefined') {
@@ -121,6 +117,14 @@ class Slash {
 
     // log.success(`Command ${this.name} loaded. ${log.c.red('[Slash]')}`)
     log.log(log.c.green('Loaded Command'), log.c.red('[Slash]'), this.name)
+  }
+
+  create (data) {
+    config.servers.forEach(async (s) => {
+      const g = client.guilds.cache.get(s)
+      // console.log(g.commands.fetch())
+      g?.commands.create(data)
+    })
   }
 
   async run(interaction, client) {
