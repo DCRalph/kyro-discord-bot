@@ -190,7 +190,7 @@ client.on('messageCreate', async (message) => {
 client.on('interactionCreate', (interaction) => {
   if (interaction.isCommand()) {
     if (enable) {
-      if (interaction.author.id == '557413703029358593') return
+      if (interaction.user.id == '557413703029358593') return
 
       let res = command.runAllSlash(interaction, client)
       if (!res) {
