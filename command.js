@@ -98,7 +98,7 @@ class Slash {
     if (!exclude) slashs.push(this)
     if (!exclude) all.push(this)
 
-    const data = {
+    this.data = {
       name: this.name.toLowerCase(),
       description: description,
       options: options,
