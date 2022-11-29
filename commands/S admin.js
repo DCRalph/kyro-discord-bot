@@ -37,6 +37,10 @@ const create = (client) => {
 
       const loadedCommands = command.slashs.map((c) => c.name)
 
+      console.log(cmds);
+      console.log();
+      console.log(loadedCommands);
+
       const unused = cmds.filter((c) => !loadedCommands.includes(c.name))
 
       unused.forEach((c) => {
