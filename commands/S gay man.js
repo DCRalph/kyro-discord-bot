@@ -8,7 +8,7 @@ const create = (client) => {
   new command.Slash(
     client,
     ['slay'],
-    '',
+    'slay',
     [],
     async (interaction, client) => {
       
