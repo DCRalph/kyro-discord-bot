@@ -33,19 +33,15 @@ const create = (client) => {
       const g = await client.guilds.fetch(config.servers[0])
       const c = await g.commands.fetch()
 
-      const cmds = Array.from(c.values())
+      // const loadedCommands = command.slashs.map((c) => c.name)
 
-      const loadedCommands = command.slashs.map((c) => c.name)
-
-      console.log(cmds);
-      console.log();
-      console.log(loadedCommands);
-
-      const unused = cmds.filter((c) => !loadedCommands.includes(c.name))
+      // const unused = cmds.filter((c) => !loadedCommands.includes(c.name))
 
       // unused.forEach((c) => {
       //   g.commands.delete(c)
       // })
+
+      const cmds = Array.from(c.values())
 
       cmds.forEach((c) => {
         g.commands.delete(c)
@@ -55,16 +51,24 @@ const create = (client) => {
         c.create(c.data, client)
       })
 
+
+      const c2 = await g.commands.fetch()
+      const cmds2 = Array.from(c2.values())
+
+
+
       const embed = new Discord.MessageEmbed()
 
       embed.setTitle('Unused Commands')
       embed.setColor(util.hslToHex(Math.random() * 360, 100, 50))
 
-      embed.setDescription(`unused: ${unused.length}`)
+      // embed.setDescription(`unused: ${unused.length}`)
 
-      unused.forEach((c) => {
-        embed.addField(c.name, c.description)
-      })
+      // unused.forEach((c) => {
+      //   embed.addField(c.name, c.description)
+      // })
+
+      embed.addField('not', 'working')
 
       await interaction.channel.send({
         embeds: [embed],
