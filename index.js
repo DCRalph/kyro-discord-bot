@@ -20,6 +20,8 @@ const client = new Discord.Client({
   ],
 })
 
+global.client = client;
+
 let enable = true
 
 client.on('ready', async () => {
