@@ -7,7 +7,7 @@ import db from '../db.js'
 const create = (client) => {
   new command.Slash(
     client,
-    ['list members'],
+    ['list'],
     'get all members',
     [],
     async (message, client) => {
