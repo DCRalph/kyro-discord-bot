@@ -84,7 +84,7 @@ const create = (client) => {
           return b[1] - a[1]
         })
 
-        embed.addField('Games:', games.length, false)
+        embed.addField('Games:', `#${games.length}`, false)
         if (games.length > 0) {
           // let gameString = ''
           // games.forEach((g) => {
