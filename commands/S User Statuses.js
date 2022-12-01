@@ -93,7 +93,7 @@ const create = (client) => {
           // embed.addField('Games:', gameString, false)
 
           games.forEach((g) => {
-            embed.addField(`${g[0]}:`, `${pms(g[1])}`, fasle)
+            embed.addField(`${g[0]}:`, `${pms(g[1])}`, false)
           })
         }
 
