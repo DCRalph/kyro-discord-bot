@@ -7,6 +7,23 @@ import fs from 'fs'
 import db from './db.js'
 import log from './logger.js'
 
+import {
+  pb,
+  getRecords,
+  getRecord,
+  createRecord,
+  editRecord,
+  deleteRecord,
+  search,
+} from './db2.js'
+
+const authData = await pb.admins.authWithPassword(
+  config.db.user,
+  config.db.pass
+)
+
+// console.log(authData);
+
 // const ffmpeg = require("ffmpeg");
 
 const client = new Discord.Client({
@@ -20,7 +37,7 @@ const client = new Discord.Client({
   ],
 })
 
-global.client = client;
+global.client = client
 
 let enable = true
 
@@ -124,7 +141,7 @@ client.on('messageCreate', async (message) => {
     message.channel.send(res)
   }
 
-  if (config.chads.includes(message.author.id)  && message.content == 'asc') {
+  if (config.chads.includes(message.author.id) && message.content == 'asc') {
     const g = await client.guilds.fetch(message.guild.id)
     const m = await g.members.fetch(message.member.id)
 
@@ -187,6 +204,8 @@ client.on('messageCreate', async (message) => {
 
     console.log(await g.roles.fetch())
   }
+
+  console.log(await search(`userID = '${message.author.id}'`))
 })
 
 client.on('interactionCreate', (interaction) => {
