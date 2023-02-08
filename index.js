@@ -205,7 +205,7 @@ client.on('messageCreate', async (message) => {
     console.log(await g.roles.fetch())
   }
 
-  console.log(await search(`userID = '${message.author.id}'`))
+  // console.log(await search(`userID = '${message.author.id}'`))
 })
 
 client.on('interactionCreate', (interaction) => {
