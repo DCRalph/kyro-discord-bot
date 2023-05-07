@@ -253,11 +253,13 @@ const userStatuses = (gMember) => {
 
   db.data.userDB[gMember.user.id].username = gMember.user.username
 
-  log.info(
-    `${log.c.magenta(gMember.user.username)} changed status from ${log.c.red(
-      oldStatus
-    )} to ${log.c.red(status)}`
-  )
+  if (oldStatus != status) {
+    log.info(
+      `${log.c.magenta(gMember.user.username)} changed status from ${log.c.red(
+        oldStatus
+      )} to ${log.c.red(status)}`
+    )
+  }
 
   if (['online', 'idle', 'dnd', 'offline'].includes(oldStatus)) {
     db.data.userDB[gMember.user.id].statuses[oldStatus] +=
@@ -281,9 +283,15 @@ const userStatuses = (gMember) => {
     })
   }
 
-  db.data.userDB[gMember.user.id].statuses.online = Number(db.data.userDB[gMember.user.id].statuses.online)
-  db.data.userDB[gMember.user.id].statuses.idle = Number(db.data.userDB[gMember.user.id].statuses.idle)
-  db.data.userDB[gMember.user.id].statuses.dnd = Number(db.data.userDB[gMember.user.id].statuses.dnd)
+  db.data.userDB[gMember.user.id].statuses.online = Number(
+    db.data.userDB[gMember.user.id].statuses.online
+  )
+  db.data.userDB[gMember.user.id].statuses.idle = Number(
+    db.data.userDB[gMember.user.id].statuses.idle
+  )
+  db.data.userDB[gMember.user.id].statuses.dnd = Number(
+    db.data.userDB[gMember.user.id].statuses.dnd
+  )
 
   db.data.userDB[gMember.user.id].statuses.total =
     db.data.userDB[gMember.user.id].statuses.online +
@@ -310,7 +318,6 @@ const calcCringe = (games) => {
   const addText = (game, text) => {
     texts.push({ game, text })
   }
-
 
   const times = {
     hour: 3600000,
