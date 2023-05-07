@@ -253,6 +253,9 @@ const userStatuses = (gMember) => {
 
   db.data.userDB[gMember.user.id].username = gMember.user.username
 
+  log.info("="+ oldStatus + "=")
+  log.info("="+ status + "=")
+
   if (oldStatus != status) {
     log.info(
       `${log.c.magenta(gMember.user.username)} changed status from ${log.c.red(
