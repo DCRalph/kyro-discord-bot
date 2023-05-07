@@ -243,6 +243,7 @@ const userStatuses = (gMember) => {
         idle: 0,
         dnd: 0,
         offline: 0,
+        total: 0,
       },
       games: {},
     }
@@ -279,6 +280,10 @@ const userStatuses = (gMember) => {
         now - db.data.userDB[gMember.user.id].last
     })
   }
+
+  db.data.userDB[gMember.user.id].statuses.online = Number(db.data.userDB[gMember.user.id].statuses.online)
+  db.data.userDB[gMember.user.id].statuses.idle = Number(db.data.userDB[gMember.user.id].statuses.idle)
+  db.data.userDB[gMember.user.id].statuses.dnd = Number(db.data.userDB[gMember.user.id].statuses.dnd)
 
   db.data.userDB[gMember.user.id].statuses.total =
     db.data.userDB[gMember.user.id].statuses.online +
